@@ -1,0 +1,47 @@
+from onboard_workflow.url_processor import URLProcessor
+from onboard_workflow.clean_and_chunk import DataChunker
+from config.config import (
+    AIAgentOnboardRequest, AIAgentOnboardingDataResponse, metaData
+)
+import asyncio
+
+class GenerateDataSnapshot:
+    def __init__(self, request: AIAgentOnboardRequest):
+        if not request.urls:
+            raise ValueError("At least one of urls, files, or text_input must be provided")
+
+        self.request = request
+        self.url_processor = URLProcessor(self.request.urls or [])
+        self.data_chunker = DataChunker()
+
+    async def assign_tasks(self):
+        url_task = asyncio.create_task(self.url_processor.get_scraped_data())
+        
+        url_results = await asyncio.gather(
+            url_task
+        )
+
+        responses = []
+
+        # Process URL data
+        for url_result in url_results:
+            for data_item in url_result.get("data", []):
+                responses.append(AIAgentOnboardingDataResponse(
+                    meta_data=metaData(
+                        source="web",
+                        url=data_item.get("metadata", {}).get("url", "")
+                    ),
+                    content=data_item.get("markdown", ""),
+                    overview=""
+                ))
+
+        return responses
+
+    async def get_data(self):
+        raw_data = await self.assign_tasks()
+
+        print("Received raw data --> Now processing clean")
+
+        clean_data = await self.data_chunker.chunk_and_clean(raw_data)
+        return clean_data
+

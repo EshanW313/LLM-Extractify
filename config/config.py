@@ -1,0 +1,54 @@
+from typing import Optional, List, Dict, Literal, Any
+from pydantic import BaseModel
+import os
+from dotenv import load_dotenv
+from firecrawl import FirecrawlApp
+from pydantic import BaseModel, ConfigDict
+from config.model_provider_config import ModelProviderConfig
+
+load_dotenv()
+
+class AIAgentOnboardRequest(BaseModel):
+    session_id: str
+    urls: List[str]
+    
+class metaData(BaseModel):
+    source: Literal["web", "KB", "email", "user_upload"]
+    url: Optional[str] = None
+
+class AIAgentOnboardingDataResponse(BaseModel):
+    meta_data: metaData
+    content: str
+    overview: str
+
+firecrawl_config: FirecrawlApp = FirecrawlApp(
+        api_key=os.getenv("FIRECRAWL_API_KEY")
+    )
+
+### Setting up the OpenAI Config ###
+class OpenAIConfig(ModelProviderConfig):
+    model_config = ConfigDict(extra="allow")
+    api: str = "openai"
+    base_url: str = "https://api.openai.com/v1"
+    messages: str = "MISSING"
+    tokenizer: str = "tiktoken"
+    params: Dict[str, Any] = {
+        "model": "gpt-4o-mini",
+        "stop": None,
+        "n": 1,
+        "temperature": 0
+    }
+    # Pass the openai api key from .env file
+    api_key: str = os.getenv("OPENAI_API_KEY", "MISSING")
+
+chunk_and_clean_task_app: OpenAIConfig = OpenAIConfig(
+    messages = "config/prompts/message_chunk.yaml",
+)
+chunk_and_clean_task_app.update_params(
+    model = "gpt-4o",
+    stop = None,
+    n = 1,
+    max_tokens = 10000,
+    temperature = 0,
+    response_format={"type": "json_object"}
+)
