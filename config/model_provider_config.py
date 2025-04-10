@@ -64,8 +64,8 @@ class ModelProviderConfig(BaseModel):
         if self.api == "openai":
             print("Sending request to OpenAI...")
             response = client.chat.completions.create(
-            messages=model_messages,
-            **self.params,
-        )
+                messages=model_messages,
+                **self.params,
+            )
             return response.choices[0].message.content.strip()
             
