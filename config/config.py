@@ -1,5 +1,6 @@
 from typing import Optional, List, Dict, Literal, Any
 from pydantic import BaseModel
+from pydantic_settings import BaseSettings
 import os
 from dotenv import load_dotenv
 from firecrawl import FirecrawlApp
@@ -52,3 +53,12 @@ chunk_and_clean_task_app.update_params(
 	temperature = 0,
 	response_format={"type": "json_object"}
 )
+
+class ZillizConfig(BaseSettings):
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
+    ZILLIZ_AUTH_TOKEN: str = os.getenv("ZILLIZ_AUTH_TOKEN")
+    ZILLIZ_CLOUD_URI: str =os.getenv("ZILLIZ_CLOUD_URI")
+    VECTOR_DIMENSION: int = 3072
+    ZILLIZ_INSERTION_BATCH_SIZE: int = 50
+
+zillizconfig = ZillizConfig()
