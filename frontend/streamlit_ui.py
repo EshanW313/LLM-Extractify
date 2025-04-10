@@ -1,6 +1,3 @@
-import os
-print("WORKING DIRECTORY:", os.getcwd())
-
 import streamlit as st
 # import validators
 from urllib.parse import urlparse
@@ -13,11 +10,13 @@ import json
 
 # function to generate data snapshot
 # this function is called when the "Scrape Webpages" button is clicked
-async def generate_data_snapshot(urls):
+async def generate_data_snapshot():
+  
   test_request = AIAgentOnboardRequest(
     session_id="session_123",
-    urls=urls,
+    urls=st.session_state.urls_list,
   )
+  print(test_request)
 
   generator = GenerateDataSnapshot(test_request)
   responses = await generator.get_data()
@@ -122,9 +121,10 @@ with col_scrape:
       for url in valid_urls:
         st.write(f"- {url}")
       try:
+        print(valid_urls)
         st.spinner("Scraping in progress...")
         
-        asyncio.run(generate_data_snapshot(valid_urls))
+        asyncio.run(generate_data_snapshot())
 
         # sample scraped_data 
         # scraped_data = {url: f"Scraped content for {url}" for url in valid_urls}

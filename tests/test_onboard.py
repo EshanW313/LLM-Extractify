@@ -6,7 +6,7 @@ import json
 async def generate_data_snapshot():
     test_request = AIAgentOnboardRequest(
         session_id="session_123",
-        urls=['https://coldbean.ai/', 'https://www.crunchbase.com/'],
+        urls=['https://hermanwandabwa.medium.com/web-scraping-product-driven-question-answer-pairs-214988cdfed4', 'https://www.crunchbase.com/'],
     )
 
     generator = GenerateDataSnapshot(test_request)
@@ -17,7 +17,7 @@ async def generate_data_snapshot():
 
     
     
-    with open("data/data_snapshot_clean.json", "w") as f:
+    with open("data/data_snapshot_clean_llm_project.json", "w") as f:
         json.dump(response_dicts, f, indent=4)
 
 

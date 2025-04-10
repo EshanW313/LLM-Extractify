@@ -3,7 +3,6 @@ from onboard_workflow.clean_and_chunk import DataChunker
 from config.config import (
     AIAgentOnboardRequest, AIAgentOnboardingDataResponse, metaData
 )
-import asyncio
 
 class GenerateDataSnapshot:
     def __init__(self, request: AIAgentOnboardRequest):
@@ -14,16 +13,12 @@ class GenerateDataSnapshot:
         self.url_processor = URLProcessor(self.request.urls or [])
         self.data_chunker = DataChunker()
 
-    async def assign_tasks(self):
-        url_task = asyncio.create_task(self.url_processor.get_scraped_data())
+    def assign_tasks(self):
+        url_results = self.url_processor.get_scraped_data()
         
-        url_results = await asyncio.gather(
-            url_task
-        )
-
         responses = []
 
-        # Process URL data
+        #Process URL data
         for url_result in url_results:
             for data_item in url_result.get("data", []):
                 responses.append(AIAgentOnboardingDataResponse(
@@ -34,11 +29,11 @@ class GenerateDataSnapshot:
                     content=data_item.get("markdown", ""),
                     overview=""
                 ))
-
         return responses
 
     async def get_data(self):
-        raw_data = await self.assign_tasks()
+        print('processing your URL scraping request')
+        raw_data = self.assign_tasks()
 
         print("Received raw data --> Now processing clean")
 

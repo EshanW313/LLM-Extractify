@@ -1,0 +1,26 @@
+[
+    {
+        "meta_data": {
+            "source": "web",
+            "url": "https://hermanwandabwa.medium.com/web-scraping-product-driven-question-answer-pairs-214988cdfed4"
+        },
+        "content": "I\u2019ve always been fascinated by the workings of Large Language Models and, more specifically, by fine-tuning the models to be better at certain tasks. As a Kenyan, I thought of a few companies that could benefit from leveraging the power of such fine-tuned models. I thought of companies like Safaricom (Kenya\u2019s largest telco by subscriber base) and Kenya Airways, the national airline, that could benefit by deploying such models to even handle their customer queries in a more \u201cintelligent\u201d way compared to traditional chatbots.",
+        "overview": "Introduction to the potential benefits of fine-tuning Large Language Models for companies like Safaricom and Kenya Airways."
+    },
+    {
+        "meta_data": {
+            "source": "web",
+            "url": "https://www.crunchbase.com/"
+        },
+        "content": "Discover and act on private market activity with predictive company intelligence. Crunchbase Scout may make mistakes and is not legal, financial or investment advice.",
+        "overview": "Crunchbase offers predictive company intelligence but advises caution as it may not provide legal, financial, or investment advice."
+    },
+    {
+        "meta_data": {
+            "source": "web",
+            "url": "https://www.crunchbase.com/"
+        },
+        "content": "Development Bank is increasing its lending from OMR 23.6 million in 2023 to OMR 38.9 million in 2024, marking a 64.8% increase to support SMEs in Oman.",
+        "overview": "Development Bank's increased lending to support SMEs in Oman."
+    }
+]
