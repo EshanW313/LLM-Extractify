@@ -8,7 +8,7 @@ packages = [{ include = "onboard_workflow" }]
 # Or add: package-mode = false  # if not using as a package
 
 [tool.poetry.dependencies]
-python = ">=3.10,<=3.13"
+python = ">=3.10,<=3.14"
 openai = "==1.68.0"
 firecrawl-py = ">=1.15.0,<2.0.0"
 mistralai = ">=1.6.0,<2.0.0"
