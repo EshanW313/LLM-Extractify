@@ -126,9 +126,6 @@ with col_scrape:
         
         asyncio.run(generate_data_snapshot())
 
-        # sample scraped_data 
-        # scraped_data = {url: f"Scraped content for {url}" for url in valid_urls}
-
         st.success("Scraping finished!")
         # st.write("Scraped Data (Mock):")
         # st.json(scraped_data)
