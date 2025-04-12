@@ -21,6 +21,8 @@ dotenv = "^0.9.9"
 firecrawl = "^1.15.0"
 streamlit = "^1.44.1"
 pydantic-settings = "^2.8.1"
+sentence-transformers = "^4.0.2"
+einops = "^0.8.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -1,5 +1,5 @@
 from typing import Optional, List, Dict, Literal, Any
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings
 import os
 from dotenv import load_dotenv
@@ -14,6 +14,7 @@ class AIAgentOnboardRequest(BaseModel):
 	urls: List[str]
 	
 class metaData(BaseModel):
+	session_id: str
 	source: Literal["web", "KB", "email", "user_upload"]
 	url: Optional[str] = None
 
@@ -21,6 +22,7 @@ class AIAgentOnboardingDataResponse(BaseModel):
 	meta_data: metaData
 	content: str
 	overview: str
+	vector: Optional[List[float]] = Field("", description="Vector embedding of the content")
 
 firecrawl_config: FirecrawlApp = FirecrawlApp(
 			api_key=os.getenv("FIRECRAWL_API_KEY")

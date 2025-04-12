@@ -1,6 +1,7 @@
 [
     {
         "meta_data": {
+            "session_id": "session_123",
             "source": "web",
             "url": "https://hermanwandabwa.medium.com/web-scraping-product-driven-question-answer-pairs-214988cdfed4"
         },
@@ -9,6 +10,7 @@
     },
     {
         "meta_data": {
+            "session_id": "session_123",
             "source": "web",
             "url": "https://www.crunchbase.com/"
         },
@@ -17,6 +19,7 @@
     },
     {
         "meta_data": {
+            "session_id": "session_123",
             "source": "web",
             "url": "https://www.crunchbase.com/"
         },
