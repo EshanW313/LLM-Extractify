@@ -6,12 +6,14 @@ from dotenv import load_dotenv
 from firecrawl import FirecrawlApp
 from pydantic import BaseModel, ConfigDict
 from config.model_provider_config import ModelProviderConfig
+from mistralai import Mistral
 
 load_dotenv()
 
 class AIAgentOnboardRequest(BaseModel):
 	session_id: str
 	urls: List[str]
+	files: List[str]
 	
 class metaData(BaseModel):
 	session_id: str
@@ -55,6 +57,10 @@ chunk_and_clean_task_app.update_params(
 	temperature = 0,
 	response_format={"type": "json_object"}
 )
+
+mistralai_config: Mistral = Mistral(
+    api_key=os.getenv("MISTRAL_API_KEY")
+    )
 
 class ZillizConfig(BaseSettings):
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")

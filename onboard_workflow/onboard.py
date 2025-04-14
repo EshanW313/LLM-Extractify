@@ -1,4 +1,5 @@
 from onboard_workflow.url_processor import URLProcessor
+from onboard_workflow.file_processor import FileProcessor
 from onboard_workflow.clean_and_chunk import DataChunker
 from config.config import (
     AIAgentOnboardRequest, AIAgentOnboardingDataResponse, metaData, zillizconfig
@@ -7,6 +8,7 @@ from typing import List
 from utils.services import EmbeddingService
 from collection_creator.create_zilliz_collection import ZillizClient
 from fastapi import HTTPException
+import asyncio
 
 class GenerateDataSnapshot:
     def __init__(self, request: AIAgentOnboardRequest):
@@ -15,10 +17,16 @@ class GenerateDataSnapshot:
 
         self.request = request
         self.url_processor = URLProcessor(self.request.urls or [])
+        self.file_processor = FileProcessor(self.request.files or [])
         self.data_chunker = DataChunker()
 
-    def assign_tasks(self):
+    async def assign_tasks(self):
         url_results = self.url_processor.get_scraped_data()
+        file_task = asyncio.create_task(self.file_processor.process_files())
+        print("Waiting for URL and file processing tasks to complete...")
+        [file_results] = await asyncio.gather(
+            file_task
+        )
         
         responses = []
 
@@ -34,6 +42,20 @@ class GenerateDataSnapshot:
                     content=data_item.get("markdown", ""),
                     overview=""
                 ))
+        
+        # Process file data
+        for file_result, file_url in zip(file_results, self.request.files or []):
+            for page in file_result.get("pages", []): 
+                responses.append(AIAgentOnboardingDataResponse(
+                    meta_data=metaData(
+                        session_id=self.request.session_id,
+                        source="KB",
+                        url=file_url
+                    ),
+                    content=page.get("markdown", ""), 
+                    overview="",
+                ))
+
         return responses
 
     async def get_data(self):
