@@ -6,8 +6,11 @@ from config.config import AIAgentOnboardRequest, AIAgentOnboardingDataResponse
 from onboard_workflow.onboard import GenerateDataSnapshot
 from onboard_workflow.onboard import DataUploader
 import json
+import torch
 
 st.set_page_config(layout="wide")
+
+torch.classes.__path__ = []
 
 # function to generate data snapshot
 # this function is called when the "Scrape Webpages" button is clicked

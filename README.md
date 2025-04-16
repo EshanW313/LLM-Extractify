@@ -10,3 +10,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 https://foundation.wikimedia.org/wiki/Policy:Privacy_policy
 https://docs.llamaindex.ai/en/stable/examples/embeddings/huggingface/
+
+
+https://www.sas.com/en/events/sas-innovate/faq.html
+https://aiconference.com/faq/
+https://foundation.wikimedia.org/wiki/Policy:Privacy_policy
