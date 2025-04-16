@@ -60,8 +60,7 @@ class DataChunker:
 			try:
 				# Normalize JSON response
 				message_content = response.replace("```json", "").replace("```", "").strip()
-				print(f"LLM Response ({self.llm_client_config.api}): {message_content}")
-
+				
 				parsed_data = json.loads(message_content)
 				print(f"\nPARSED LLM RESPONSE TYPE:\n {type(parsed_data)}\n")
 				print(f"\nPARSED LLM RESPONSE:\n {parsed_data}\n")

@@ -2,8 +2,9 @@ import streamlit as st
 # import validators
 from urllib.parse import urlparse
 import asyncio
-from config.config import AIAgentOnboardRequest
+from config.config import AIAgentOnboardRequest, AIAgentOnboardingDataResponse
 from onboard_workflow.onboard import GenerateDataSnapshot
+from onboard_workflow.onboard import DataUploader
 import json
 
 st.set_page_config(layout="wide")
@@ -30,6 +31,14 @@ async def generate_data_snapshot(valid_urls, selected_llm):
     json.dump(response_dicts, f, indent=4)
   st.success(f"Scraping finished! Data saved to {output_file}")
 
+  # Instantiate and call
+  uploader = DataUploader()
+  result = await uploader.upload_data(responses)
+
+  # Assertions
+  if result["status_code"] == 200:
+    st.success(f"Data uploaded successfully to zilliz")
+  
 
 # function to handle text change in textbox and update URL list
 def url_changed(index):

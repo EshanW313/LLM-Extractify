@@ -51,7 +51,7 @@ chunk_and_clean_task_app: OpenAIConfig = OpenAIConfig(
 )
 
 chunk_and_clean_task_app.update_params(
-	model = "gpt-4o",
+	model = "gpt-4o-mini",
 	stop = None,
 	n = 1,
 	max_tokens = 10000,
