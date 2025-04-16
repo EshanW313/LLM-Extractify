@@ -2,8 +2,10 @@ from onboard_workflow.url_processor import URLProcessor
 from onboard_workflow.file_processor import FileProcessor
 from onboard_workflow.clean_and_chunk import DataChunker
 from config.config import (
-    AIAgentOnboardRequest, AIAgentOnboardingDataResponse, metaData, zillizconfig
+    AIAgentOnboardRequest, AIAgentOnboardingDataResponse, metaData, zillizconfig,
+    chunk_and_clean_task_app, gemma_chunk_and_clean_task_app
 )
+
 from typing import List
 from utils.services import EmbeddingService
 from collection_creator.create_zilliz_collection import ZillizClient
@@ -11,14 +13,25 @@ from fastapi import HTTPException
 import asyncio
 
 class GenerateDataSnapshot:
-    def __init__(self, request: AIAgentOnboardRequest):
-        if not request.urls:
+    def __init__(self, request: AIAgentOnboardRequest, llm_choice='openai'):
+        if not request.urls and not request.files:
             raise ValueError("At least one of urls, files, or text_input must be provided")
 
         self.request = request
         self.url_processor = URLProcessor(self.request.urls or [])
         self.file_processor = FileProcessor(self.request.files or [])
-        self.data_chunker = DataChunker()
+        
+        if llm_choice.lower() == "gemma":
+            print("Using Gemma")
+            selected_llm_config = gemma_chunk_and_clean_task_app
+        elif llm_choice.lower() == "openai":
+            print("Using OpenAI")
+            selected_llm_config = chunk_and_clean_task_app
+        else:
+            print(f"Warning: Unknown LLM choice '{llm_choice}'. Defaulting to OpenAI")
+            selected_llm_config = chunk_and_clean_task_app
+        
+        self.data_chunker = DataChunker(llm_config=selected_llm_config)
 
     async def assign_tasks(self):
         url_results = self.url_processor.get_scraped_data()
@@ -30,7 +43,7 @@ class GenerateDataSnapshot:
         
         responses = []
 
-        #Process URL data
+        # Process URL data
         for url_result in url_results:
             for data_item in url_result.get("data", []):
                 responses.append(AIAgentOnboardingDataResponse(
@@ -59,8 +72,8 @@ class GenerateDataSnapshot:
         return responses
 
     async def get_data(self):
-        print('processing your URL scraping request')
-        raw_data = self.assign_tasks()
+        print(f'Processing request with {self.data_chunker.llm_client_config.api}...')
+        raw_data = await self.assign_tasks()
 
         print("Received raw data --> Now processing clean")
 

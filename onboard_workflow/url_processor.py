@@ -18,7 +18,8 @@ class URLProcessor:
         for url in self.urls:
             result = self.get_crawled_results(url, 1)
             results.append(result)
-        with open("data/scraped_data_firecrawl_project_test.json", "w", encoding="utf-8") as f:
+
+        with open("data/scraped_data_firecrawl_project_data.json", "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
         
         return results

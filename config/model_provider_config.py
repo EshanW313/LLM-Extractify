@@ -2,6 +2,9 @@ from pydantic import BaseModel
 from typing import Any, List, Dict
 from openai import OpenAI
 import yaml
+import google.generativeai as gen_ai
+from google import genai
+from google.genai import types
 
 class ModelProviderConfig(BaseModel):
     api: str = "openai"
@@ -27,7 +30,18 @@ class ModelProviderConfig(BaseModel):
                 base_url=self.base_url,
                 api_key=self.api_key
             )
-
+        elif self.api == "google_ai":
+            if not self.api_key or self.api_key == "MISSING":
+                print("Error: Google AI API key is missing.")
+                return None
+            print("Initializing Google AI Client...")
+            client_instance = genai.Client(api_key=self.api_key)
+            print("Google AI Client initialized successfully.")
+            self._llm_client_instance = client_instance
+            return client_instance
+        else:
+            print(f"Unsupported API provider: {self.api}")
+            return None
 
     def get_messages_from_yaml(self, yaml_file_path: str) -> List[Dict[str, str]]:
         try:
@@ -45,11 +59,24 @@ class ModelProviderConfig(BaseModel):
             return []
         
     def format_messages(self, messages: List[Dict[str, str]], **kwargs) -> List[Dict[str, str]]:
-        formatted_messages = []
-        for message in messages:
-            content = message['content'].format(**kwargs)
-            formatted_messages.append({'role': message['role'], 'content': content})
-        return formatted_messages
+        if self.api == "openai":
+            formatted_messages = []
+            for message in messages:
+                content = message['content'].format(**kwargs)
+                formatted_messages.append({'role': message.get('role', 'user'), 'content': content})
+            return formatted_messages
+
+        elif self.api == "google_ai":
+            prompt_parts = []
+            for message in messages:
+                content = message.get('content', '').format(**kwargs)
+                prompt_parts.append(content)
+            return "\n\n".join(prompt_parts)
+        
+        else:
+            print(f"Warning: Unsupported API type '{self.api}' in format_messages.")
+            return []
+
         
     async def send_request(self, client, model_messages: List[Dict[str, str]]):
         """
@@ -68,4 +95,52 @@ class ModelProviderConfig(BaseModel):
                 **self.params,
             )
             return response.choices[0].message.content.strip()
+
+        elif self.api == "google_ai":
+            print("Sending request to Google AI (Gemma)...")
+            print("\nCLIENT:", client)
+            genai_module = client
+            try:
+                model_name = self.params.get("model", "gemma-3-27b-it")
+                generation_config = {
+                    'max_output_tokens': self.params.get("max_output_tokens", 8192),
+                    'temperature': self.params.get("temperature", 0.1),
+                    # top_p=self.params.get("top_p", None),
+                    # top_k=self.params.get("top_k", None),
+                }
+                safety_settings = [
+                    {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+                    {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+                    {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+                    {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+                ]
+                
+                print("\nCONTENTS:\n", model_messages, "\n")
+                # model = gen_ai.GenerativeModel(model_name)
+                # print("\nMODEL:\n", model, "\n")
+                response = await genai_module.aio.models.generate_content(
+                    model='gemma-3-27b-it',
+                    contents=model_messages,
+                    # generation_config=generation_config,
+                    # safety_settings=safety_settings,
+                    # request_options={"timeout": 600}
+                )
+                print("\nRESPONSE TYPE:\n", type(response), "\n")
+                print("\nRESPONSE:\n", response, "\n")
+
+                if not response.candidates:
+                    print("Warning: Response was blocked, possibly due to safety settings.")
+                    print(f"Prompt Feedback: {response.prompt_feedback}")
+                    return "Error: Response blocked by safety filters."
+
+                
+                return response.text.strip()
+            
+            except Exception as e:
+                print("Error sending request to Google AI:", e)
+                return "Error: {e}"
+        
+        else:
+            print("send_request not implemented for API provider:", {self.api})
+            return "Error: Unsupported provider"
             

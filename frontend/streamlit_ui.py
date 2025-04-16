@@ -6,24 +6,29 @@ from config.config import AIAgentOnboardRequest
 from onboard_workflow.onboard import GenerateDataSnapshot
 import json
 
-# st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
 # function to generate data snapshot
 # this function is called when the "Scrape Webpages" button is clicked
-async def generate_data_snapshot():
-  
+async def generate_data_snapshot(valid_urls, selected_llm):
   test_request = AIAgentOnboardRequest(
-    session_id="session_123",
-    urls=st.session_state.urls_list,
+    session_id= "session_123_" + selected_llm,
+    urls=valid_urls,
+    files=[],
   )
-  print(test_request)
 
-  generator = GenerateDataSnapshot(test_request)
+  print(f"Creating request for session {test_request.session_id} with LLM: {selected_llm}")
+  print(f"URLs: {test_request.urls}")
+
+  generator = GenerateDataSnapshot(test_request, llm_choice=selected_llm)
+  print("GENERATOR CREATED")
   responses = await generator.get_data()
   response_dicts = [response.model_dump() for response in responses]
 
-  with open("data/test_data_snapshot_clean.json", "w") as f:
+  output_file = f"data/data_snapshot_clean_{selected_llm}.json"
+  with open(output_file, "w") as f:
     json.dump(response_dicts, f, indent=4)
+  st.success(f"Scraping finished! Data saved to {output_file}")
 
 
 # function to handle text change in textbox and update URL list
@@ -61,7 +66,7 @@ for i in range(len(st.session_state.urls_list)):
 
 st.title("Extractify")
 st.subheader("DS 5983 - Final Project")
-st.write("This app is awesome!")
+
 st.write("Enter URLs below:")
 
 # div for URL boxes
@@ -97,7 +102,7 @@ with input_container:
     st.rerun()
 
 # add new URL and scrape URLs columns
-col_add, col_scrape = st.columns([1, 3])
+col_add, col_llm_select, col_scrape = st.columns([1, 1, 3])
 with col_add:
   if st.button("Add another URL"):
     st.session_state.urls_list.append("")
@@ -109,6 +114,14 @@ with col_add:
     # rerun to show new text box
     st.rerun()
 
+with col_llm_select:
+  llm_options = ["OpenAI", "Gemma"]
+  selected_llm = st.selectbox(
+      "Choose LLM for Chunking:",
+      options=llm_options,
+      key='selected_llm'
+  )
+
 with col_scrape:
   if st.button("Scrape Webpages", type="primary"):
     # get URLs from session state URL list
@@ -116,20 +129,16 @@ with col_scrape:
     valid_urls = st.session_state.urls_list
 
     if valid_urls:
+      llm_to_use = st.session_state.selected_llm
       st.info(f"Starting scraping process for {len(valid_urls)} URL(s)...")
       st.write("URLs to be scraped:")
       for url in valid_urls:
         st.write(f"- {url}")
-      try:
-        print(valid_urls)
-        st.spinner("Scraping in progress...")
-        
-        asyncio.run(generate_data_snapshot())
+      with st.spinner(f"Scraping and processing with {llm_to_use}..."):
+        try:
+          asyncio.run(generate_data_snapshot(valid_urls, llm_to_use))
+        except Exception as e:
+          st.error(f"An error occurred during scraping: {e}")
 
-        st.success("Scraping finished!")
-        # st.write("Scraped Data (Mock):")
-        # st.json(scraped_data)
-      except Exception as e:
-        st.error(f"An error occurred during scraping: {e}")
     else:
       st.warning("Please enter at least one valid URL!")
