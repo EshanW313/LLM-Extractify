@@ -5,14 +5,11 @@ system: |
         Each chunk should answer a specific question only.
 
         Input is provided in the following format:
-        content: <content>
+        {{content: <content>}}
 
-        Clean the input, remove EXTRA unecessary characters to make the text chunks readable and consumable for vector database ingestion.
+        Clean the input, remove EXTRA '\n', '#', '$', '(', ')', ',', '!', ':', ';', '?' and other unecessary characters to make the text chunks readable annd consumable for vector database ingestion.
 
-        DO NOT TRY Summarizing the content or altering it. 
-        Your task is to only create mini chunks from the content to make it relevant, readable, concise, and easier for vector database to store information.
-        
-        Chunk data as question answer pairs as content and overview.
+        DO NOT TRY Summarizing the content or altering it. Your task is to only create mini chunks from the content to make it relevant, readable, concise, and easier for vector database to store information.
 
         Return the output STRICTLY in the following format as json:
         [
