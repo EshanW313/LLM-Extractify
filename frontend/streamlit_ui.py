@@ -8,6 +8,7 @@ from onboard_workflow.onboard import DataUploader
 import json
 import torch
 import urllib.response
+import random
 
 st.set_page_config(layout="wide")
 
@@ -16,16 +17,18 @@ torch.classes.__path__ = []
 # function to generate data snapshot
 # this function is called when the "Scrape Webpages" button is clicked
 async def generate_data_snapshot(valid_urls, selected_llm):
+  # generate a random session ID
+  sid = random.randint(int(1e9), int(9e9))
   test_request = AIAgentOnboardRequest(
-    session_id= "session_123_" + selected_llm,
+    session_id=selected_llm.lower() + "_session_" + str(sid),
     urls=[],
     files=[],
   )
 
+  print(f"Creating request for session {test_request.session_id} with LLM: {selected_llm}")
+
   for url in valid_urls:
-    print("URL:", url)
-    subtype = urllib.request.urlopen(url).info().get_content_subtype() 
-    print("SUBTYPE:", subtype, "\n")
+    subtype = urllib.request.urlopen(url).info().get_content_subtype()
     if subtype == "html":
       test_request.urls.append(url)
     elif subtype == "pdf":
@@ -33,7 +36,6 @@ async def generate_data_snapshot(valid_urls, selected_llm):
     else:
       print(f"Unsupported content type: {subtype} for URL: {url}")
 
-  print(f"Creating request for session {test_request.session_id} with LLM: {selected_llm}")
   print(f"URLs: {test_request.urls}")
   print(f"FILES: {test_request.files}")
 
