@@ -46,58 +46,58 @@ class DataChunker:
 			batches.append(". ".join(current_batch))  # Add last batch
 		
 		return batches
+	
+	def _parse_chunks(self, parsed_data: str) -> List[Dict[str, str]]:
+		"""
+		Normalize and parse LLM response into a list of validated MiniChunks.
+		Supports various response shapes like:
+		- single dict with content & overview
+		- dict with keys like 'data', 'response', 'content', or 'result'
+		- raw list of dicts
+		"""
+		valid_chunks = []
+		# Normalize single dict with content and overview
+		if isinstance(parsed_data, dict) and "content" in parsed_data and "overview" in parsed_data:
+			parsed_data = [parsed_data]
 
+		# Extract list from common response keys
+		elif isinstance(parsed_data, dict):
+			for key in ["data", "response", "content", "result"]:
+				if isinstance(parsed_data.get(key), list):
+					parsed_data = parsed_data[key]
+					break
+
+		# At this point, parsed_data should be a list of dicts
+		if isinstance(parsed_data, list):
+			for chunk in parsed_data:
+				try:
+					validated_chunk = MiniChunk(**chunk)
+					valid_chunks.append(validated_chunk.dict())
+				except ValidationError as e:
+					print(f"Skipping invalid chunk: {chunk}, Error: {e}")
+
+		return valid_chunks
+	
 	async def call_llm(self, content: str) -> List[Dict[str, str]]:
 		"""
 		Calls LLM asynchronously to refine content into structured mini-chunks.
-		Handles both single dictionary and list responses.
+		Delegates parsing logic to `parse_chunks`.
 		"""
 		async with self.semaphore:
 			msg_structure = self.llm_client_config.get_messages_from_yaml(self.llm_client_config.messages)
 			msg_input = self.llm_client_config.format_messages(msg_structure, content=content)
 
 			response = await self.llm_client_config.send_request(self.llm_provider_client, msg_input)
+
 			try:
-				# Normalize JSON response
+				# Clean and parse JSON response
 				message_content = response.replace("```json", "").replace("```", "").strip()
-				
 				parsed_data = json.loads(message_content)
+
 				print(f"\nPARSED LLM RESPONSE TYPE:\n {type(parsed_data)}\n")
 				print(f"\nPARSED LLM RESPONSE:\n {parsed_data}\n")
 
-				# Handle case where response is a single chunk (dict)
-				if isinstance(parsed_data, dict) and "content" in parsed_data and "overview" in parsed_data:
-					parsed_data = {"content": [parsed_data]}  # Convert to list format
-
-				# Handle case where response contains a list of chunks
-				if isinstance(parsed_data, dict) and isinstance(parsed_data.get("content"), list):
-					valid_chunks = []
-					for chunk in parsed_data["content"]:
-						try:
-							validated_chunk = MiniChunk(**chunk)  # Validate structure
-							valid_chunks.append(validated_chunk.dict())
-						except ValidationError as e:
-							print(f"Skipping invalid chunk: {chunk}, Error: {e}")
-
-					return valid_chunks
-
-				# Handle case where response contains a list of chunks
-				elif isinstance(parsed_data, list):
-					valid_chunks = []
-					for chunk in parsed_data:
-						try:
-							print(type(chunk))
-							print(chunk)
-							valid_chunks.append(chunk)
-							# validated_chunk = MiniChunk(**chunk)  # Validate structure
-							# valid_chunks.append(validated_chunk.dict())
-						except ValidationError as e:
-							print(f"Skipping invalid chunk: {chunk}, Error: {e}")
-
-					return valid_chunks
-
-				print(f"Unexpected LLM response format: {parsed_data}")
-				return []  # Return empty list if response is not valid
+				return self._parse_chunks(parsed_data)
 
 			except json.JSONDecodeError:
 				print("Error decoding JSON from LLM response")
