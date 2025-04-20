@@ -8,8 +8,9 @@ class URLProcessor:
         self.app = firecrawl_config
 
     def get_crawled_results(self, url, limit):
-        crawl_result = self.app.crawl_url(url, 
-                                          params={"limit": limit, "scrapeOptions": {"formats": ["markdown"]}})
+        crawl_result = self.app.crawl_url(url, params={
+            "limit": limit, "scrapeOptions": {"formats": ["markdown"]}
+        })
         return crawl_result
 
     def get_scraped_data(self):

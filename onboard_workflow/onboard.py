@@ -22,10 +22,8 @@ class GenerateDataSnapshot:
         self.file_processor = FileProcessor(self.request.files or [])
         
         if llm_choice.lower() == "gemma":
-            print("Using Gemma")
             selected_llm_config = gemma_chunk_and_clean_task_app
         elif llm_choice.lower() == "openai":
-            print("Using OpenAI")
             selected_llm_config = chunk_and_clean_task_app
         else:
             print(f"Warning: Unknown LLM choice '{llm_choice}'. Defaulting to OpenAI")
@@ -72,7 +70,6 @@ class GenerateDataSnapshot:
         return responses
 
     async def get_data(self):
-        print(f'Processing request with {self.data_chunker.llm_client_config.api}...')
         raw_data = await self.assign_tasks()
 
         print("Received raw data --> Now processing clean")

@@ -32,12 +32,11 @@ async def generate_data_snapshot(valid_urls, selected_llm):
       else:
         print(f"Unsupported content type: {subtype} for URL: {valid_url}")
 
-
   print(f"Creating request for session {test_request.session_id} with LLM: {selected_llm}")
   print(f"URLs: {test_request.urls}")
+  print(f"FILES: {test_request.files}")
 
   generator = GenerateDataSnapshot(test_request, llm_choice=selected_llm)
-  print("GENERATOR CREATED")
   responses = await generator.get_data()
   response_dicts = [response.model_dump() for response in responses]
 
