@@ -7,6 +7,7 @@ from onboard_workflow.onboard import GenerateDataSnapshot
 from onboard_workflow.onboard import DataUploader
 import json
 import torch
+from urllib.response import urlopen
 
 st.set_page_config(layout="wide")
 
@@ -17,9 +18,20 @@ torch.classes.__path__ = []
 async def generate_data_snapshot(valid_urls, selected_llm):
   test_request = AIAgentOnboardRequest(
     session_id= "session_123_" + selected_llm,
-    urls=valid_urls,
+    urls=[],
     files=[],
   )
+
+  for valid_url in valid_urls:
+    with urlopen(valid_url) as response:
+      subtype = response.info()get_content_subtype()
+      if subtype == "html":
+        test_request.urls.append(valid_url)
+      elif subtype == "pdf":
+        test_request.files.append(valid_url)
+      else:
+        print(f"Unsupported content type: {subtype} for URL: {valid_url}")
+
 
   print(f"Creating request for session {test_request.session_id} with LLM: {selected_llm}")
   print(f"URLs: {test_request.urls}")
