@@ -7,7 +7,7 @@ from onboard_workflow.onboard import GenerateDataSnapshot
 from onboard_workflow.onboard import DataUploader
 import json
 import torch
-from urllib.response import urlopen
+import urllib.response
 
 st.set_page_config(layout="wide")
 
@@ -22,15 +22,16 @@ async def generate_data_snapshot(valid_urls, selected_llm):
     files=[],
   )
 
-  for valid_url in valid_urls:
-    with urlopen(valid_url) as response:
-      subtype = response.info()get_content_subtype()
-      if subtype == "html":
-        test_request.urls.append(valid_url)
-      elif subtype == "pdf":
-        test_request.files.append(valid_url)
-      else:
-        print(f"Unsupported content type: {subtype} for URL: {valid_url}")
+  for url in valid_urls:
+    print("URL:", url)
+    subtype = urllib.request.urlopen(url).info().get_content_subtype() 
+    print("SUBTYPE:", subtype, "\n")
+    if subtype == "html":
+      test_request.urls.append(url)
+    elif subtype == "pdf":
+      test_request.files.append(url)
+    else:
+      print(f"Unsupported content type: {subtype} for URL: {url}")
 
   print(f"Creating request for session {test_request.session_id} with LLM: {selected_llm}")
   print(f"URLs: {test_request.urls}")
