@@ -41,6 +41,6 @@ class EmbeddingService:
                 prompt_name="retrieval.query",
                 normalize_embeddings=True
             )
-            return self._pad_embedding(embedding)
+            return [self._pad_embedding(embedding)]
         except Exception as e:
             raise HTTPException(status_code=400, detail=f"Embedding error: {str(e)}")

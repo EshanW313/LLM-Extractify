@@ -1,0 +1,532 @@
+[
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Can I attend this event virtually",
+        "overview": "The AI Conference is an in-person event only.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Where is this event located",
+        "overview": "The event is located at Pier 48, Mission Rock, San Francisco, CA 94158.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "When is the event",
+        "overview": "The AI Conference takes place on September 17th \u2013 18th, 2025 beginning at 8:00 AM PST.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "How can my company sponsor The AI Conference",
+        "overview": "Visit aiconference.com/sponsors/ for all exhibitor opportunities.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Where can I park My Car",
+        "overview": "The most up to date parking info can be found at Park Wiz.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "How much does The AI Conference 2025 cost",
+        "overview": "The conference has Early Bird pricing while supplies last; standard passes pricing is available on the registration page after launch.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Under what circumstances do you offer discounts",
+        "overview": "Group rates are available to groups of three or more attendees registering together.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Do you offer discounts or complimentary passes",
+        "overview": "Discounted group rates are available for groups of two or more people registering together.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "What is the Cancellation policy",
+        "overview": "The AI Conference offers refunds up to 30 days prior to an event with a 5% fee for all refunds.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Is there a code of conduct",
+        "overview": "The code of conduct can be viewed at aiconference.com/code-of-conduct.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "I have a press, vendor, or speaker pass. What now",
+        "overview": "The AI Conference will send emails with information needed to navigate the event.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Can I present at the conference",
+        "overview": "Submissions for this year\u2019s conference speakers will open soon.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "How do I get a press pass",
+        "overview": "Members of the press can apply for a media pass shortly.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Who will be speaking at the conference",
+        "overview": "The conference features 2 days, 4 tracks, and 85+ speakers.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "How long will presentations be",
+        "overview": "Presentations will include keynote presentations lasting 40 minutes and featured contributors lasting 20 minutes.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "What topics will be covered",
+        "overview": "Topics include AGI development, Foundation Models, Generative AI, Neural Architectures, AI Infrastructure, Ethics, and more.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Are there multiple presentation areas",
+        "overview": "There are 4 main areas at The AI Conference including presentation halls and networking areas.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://aiconference.com/faq/"
+        },
+        "content": "Which hotels are near the event",
+        "overview": "Luma Hotel San Francisco, Hotel VIA, SoMa House, and Hotel Fiona are nearby options.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "What is SAS Innovate 2025 and who should attend? SAS Innovate 2025 is the largest SAS event uniting business leaders technical users and SAS partners in one collaborative space to focus on data and AI. From executives data scientists engineers and analysts to our partners across industries the event offers amazing content for everyone and every role.",
+        "overview": "Description of SAS Innovate 2025 and its target audience.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Will there be a SAS Explore in 2025? No. However all the great content our technical users have come to expect at SAS Explore hands-on learning technical sessions super demos and more will be offered at SAS Innovate.",
+        "overview": "Information about the absence of SAS Explore in 2025.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "When is it? Tuesday May 6 to Friday May 9 2025.",
+        "overview": "Dates of the SAS Innovate 2025 event.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Where will it be held? Hilton Orlando in Orlando Florida USA. The hotel address is 6001 Destination Parkway Orlando FL 32819.",
+        "overview": "Location details for SAS Innovate 2025.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Will there be a streaming option to view sessions online? SAS Innovate will offer complimentary live streaming and on-demand viewing of the general sessions and many breakout sessions on popular topics.",
+        "overview": "Details about streaming options for the event.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How much does it cost to attend? Please visit the Pricing page for details on pricing tiers and group discounts.",
+        "overview": "Information on attendance costs.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Are meals included during the event? Lunch will be provided on Wednesday May 7 and Thursday May 8. Light snacks and beverages will also be available periodically throughout each day in the Innovation Hub.",
+        "overview": "Details about meal provisions during the event.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Who is considered a full-time student? A student enrolled in at least 12 credit hours at a postsecondary academic institution. You will be asked to show your student credentials on-site at registration.",
+        "overview": "Definition of a full-time student for the event.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Can you help me request a travel visa? Attendees who need a travel visa should send an email request to SASInnovateReg@sas.com with Visa inquiry included in the subject line.",
+        "overview": "Instructions for requesting a travel visa.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "What are the conference hotel blocks and rates? Please register before booking your hotel room to secure discounted rates at one of our two conference hotels.",
+        "overview": "Information on hotel blocks and rates.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "What is included in the SAS hotel group rates? Attendees who book through our block will receive priority access to discounted group room rates and discounted resort fees.",
+        "overview": "Details on benefits of booking through the hotel group rates.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "What is the shuttle schedule between the DoubleTree and the Hilton Orlando? Tuesday 5/6\u201412:00PM to 7:30PM Wednesday 5/7\u20146:45AM to 7:30PM Thursday 5/8\u20146:45AM to 6:30PM Friday 5/9\u20148AM to 12:30PM.",
+        "overview": "Shuttle schedule information.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Do you offer transportation from the airport to the conference hotels? Transportation from the airport is not provided. All attendees are on their own for any costs associated with airport transportation.",
+        "overview": "Information on airport transportation.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How do I get from the airport to the conference hotels? Hilton Orlando and the DoubleTree by Hilton Orlando at SeaWorld are conveniently located approximately 13 miles from Orlando International Airport (MCO).",
+        "overview": "Transportation options from the airport to hotels.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Is it cheaper to take a taxi or ride-sharing app from the Orlando airport? While taxis are available taking a ride share is generally cheaper and offers more predictable fares.",
+        "overview": "Cost comparison between taxi and ride-sharing from the airport.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Are there preordered airport shuttle services? No.",
+        "overview": "Information on airport shuttle services.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How else can I get around Orlando? Guests staying at conference hotels will receive free passes for the I-Ride Trolley for the duration of your stay.",
+        "overview": "Details on transportation options within Orlando.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Are there parking passes available? We do have a limited number of parking passes at both conference hotels that are available on a first come first served basis.",
+        "overview": "Information on parking passes availability.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Can I bring a guest? There are a limited number of guest passes available exclusively for SAS Innovate After Hours on the streets of New York at Universal Studios Florida.",
+        "overview": "Guest pass availability and conditions.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Where and when do I pick up my guest badge? Guest badges can be picked up on Thursday May 8 from the registration kiosks.",
+        "overview": "Information on guest badge pickup.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "What is the dress code for SAS Innovate? Smart casual. We\u2019re keeping it professional but we\u2019re definitely not formal.",
+        "overview": "Dress code for the event.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How do I register for training tutorials or SAS certification exams? When you register for the event you will have the option to review and select from these offerings and add them to your registration.",
+        "overview": "Instructions for registering for training and certification.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How do I email the conference registrar? You can contact the conference registrar at SASInnovateReg@sas.com.",
+        "overview": "Contact information for the conference registrar.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How do you pay for SAS Innovate with SAS Training Points? SAS Training Points can be used to pay for the pre-conference training and/or the entire event.",
+        "overview": "Payment options using SAS Training Points.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How can you find out your SAS Training Points account number and balance? Contact your Customer Training Advisor or reach out to training@sas.com.",
+        "overview": "Instructions for checking SAS Training Points account details.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "What is the cost when you pay with SAS Training Points? The number of SAS Training Points deducted will be equivalent to the advertised registration price at the time of registration.",
+        "overview": "Cost details when using SAS Training Points.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Can attendees from outside of the US pay with SAS Training Points? Yes but the number of points deducted from your account will reflect the payment amount in your local currency.",
+        "overview": "Information on international attendees using SAS Training Points.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How does a current attendee change their payment method to SAS Training Points? SAS Training Points can be used retroactively on existing registrations.",
+        "overview": "Instructions for changing payment method to SAS Training Points.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "I registered but didn\u2019t receive a confirmation email. What should I do? Please check your spam folder and add sas.com as a safe sender so you can receive event updates.",
+        "overview": "Steps to take if confirmation email is not received.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Will there be a mobile app? Yes! The event app will be available for download shortly before the event starts.",
+        "overview": "Information about the event mobile app.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "How do I purchase group passes? View our step-by-step guide to buy group passes for your team.",
+        "overview": "Instructions for purchasing group passes.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "What are the group rates? Groups of 2-3: $500 per person. Groups of 4 or more: $400 per person.",
+        "overview": "Details on group rates for the event.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Is there a deadline for purchasing group passes? The group passes are available while supplies last so book soon!",
+        "overview": "Information on the deadline for group pass purchases.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "Do I need to register by a certain date? You will be able to register at any point until the event begins on May 6 2025.",
+        "overview": "Registration timeline for the event.",
+        "vector": ""
+    },
+    {
+        "meta_data": {
+            "session_id": "session_123_OpenAI",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
+        },
+        "content": "As group manager how do I manage my invitations? Once your payment is accepted you will be directed to the management page.",
+        "overview": "Instructions for group managers on managing invitations.",
+        "vector": ""
+    }
+]
