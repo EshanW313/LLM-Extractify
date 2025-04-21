@@ -5,6 +5,7 @@ import yaml
 import google.generativeai as gen_ai
 from google import genai
 from google.genai import types
+import logging
 
 class ModelProviderConfig(BaseModel):
     api: str = "openai"
@@ -32,15 +33,13 @@ class ModelProviderConfig(BaseModel):
             )
         elif self.api == "google_ai":
             if not self.api_key or self.api_key == "MISSING":
-                print("Error: Google AI API key is missing.")
+                logging.error("Error: Google AI API key is missing.")
                 return None
-            print("Initializing Google AI Client...")
             client_instance = genai.Client(api_key=self.api_key)
-            print("Google AI Client initialized successfully.")
             self._llm_client_instance = client_instance
             return client_instance
         else:
-            print(f"Unsupported API provider: {self.api}")
+            logging.error(f"Unsupported API provider: {self.api}")
             return None
 
     def get_messages_from_yaml(self, yaml_file_path: str) -> List[Dict[str, str]]:
@@ -52,10 +51,9 @@ class ModelProviderConfig(BaseModel):
             for role, content in yaml_content.items():
                 if role in ["system", "user", "assistant"]:
                     messages.append({"role": role, "content": content})
-            
             return messages
         except Exception as e:
-            print(f"Error reading YAML file: {e}")
+            logging.error(f"Error reading YAML file: {e}")
             return []
         
     def format_messages(self, messages: List[Dict[str, str]], **kwargs) -> List[Dict[str, str]]:
@@ -74,7 +72,7 @@ class ModelProviderConfig(BaseModel):
             return "\n\n".join(prompt_parts)
         
         else:
-            print(f"Warning: Unsupported API type '{self.api}' in format_messages.")
+            logging.error(f"Warning: Unsupported API type '{self.api}' in format_messages.")
             return []
 
         
@@ -89,7 +87,7 @@ class ModelProviderConfig(BaseModel):
         - str: Response from the model
         """
         if self.api == "openai":
-            print("Sending request to OpenAI...")
+            logging.info("Sending request to OpenAI...")
             response = client.chat.completions.create(
                 messages=model_messages,
                 **self.params,
@@ -97,8 +95,7 @@ class ModelProviderConfig(BaseModel):
             return response.choices[0].message.content.strip()
 
         elif self.api == "google_ai":
-            print("Sending request to Google AI (Gemma)...")
-            print("\nCLIENT:", client)
+            logging.info("Sending request to Google AI (Gemma)...")
             genai_module = client
             try:
                 model_name = self.params.get("model", "gemma-3-27b-it")
@@ -115,9 +112,6 @@ class ModelProviderConfig(BaseModel):
                     {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
                 ]
                 
-                print("\nCONTENTS:\n", model_messages, "\n")
-                # model = gen_ai.GenerativeModel(model_name)
-                # print("\nMODEL:\n", model, "\n")
                 response = await genai_module.aio.models.generate_content(
                     model='gemma-3-27b-it',
                     contents=model_messages,
@@ -125,22 +119,18 @@ class ModelProviderConfig(BaseModel):
                     # safety_settings=safety_settings,
                     # request_options={"timeout": 600}
                 )
-                print("\nRESPONSE TYPE:\n", type(response), "\n")
-                print("\nRESPONSE:\n", response, "\n")
 
                 if not response.candidates:
-                    print("Warning: Response was blocked, possibly due to safety settings.")
-                    print(f"Prompt Feedback: {response.prompt_feedback}")
+                    logging.warning("Warning: Response was blocked, possibly due to safety settings.")
                     return "Error: Response blocked by safety filters."
 
-                
                 return response.text.strip()
             
             except Exception as e:
-                print("Error sending request to Google AI:", e)
+                logging.error("Error sending request to Google AI:", e)
                 return "Error: {e}"
         
         else:
-            print("send_request not implemented for API provider:", {self.api})
+            logging.error("send_request not implemented for API provider:", {self.api})
             return "Error: Unsupported provider"
             

@@ -11,6 +11,9 @@ from utils.services import EmbeddingService
 from collection_creator.create_zilliz_collection import ZillizClient
 from fastapi import HTTPException
 import asyncio
+import logging
+
+logger = logging.getLogger(__name__)
 
 class GenerateDataSnapshot:
     def __init__(self, request: AIAgentOnboardRequest, llm_choice='openai'):
@@ -26,15 +29,16 @@ class GenerateDataSnapshot:
         elif llm_choice.lower() == "openai":
             selected_llm_config = chunk_and_clean_task_app
         else:
-            print(f"Warning: Unknown LLM choice '{llm_choice}'. Defaulting to OpenAI")
+            logging.warning(f"Warning: Unknown LLM choice '{llm_choice}'. Defaulting to OpenAI")
             selected_llm_config = chunk_and_clean_task_app
         
         self.data_chunker = DataChunker(llm_config=selected_llm_config)
+        logger.info(f"GenerateDataSnapshot initialized for session {self.request.session_id} with LLM: {llm_choice}")
 
     async def assign_tasks(self):
         url_results = self.url_processor.get_scraped_data()
         file_task = asyncio.create_task(self.file_processor.process_files())
-        print("Waiting for URL and file processing tasks to complete...")
+        logging.info("Waiting for URL and file processing tasks to complete...")
         [file_results] = await asyncio.gather(
             file_task
         )
@@ -72,7 +76,7 @@ class GenerateDataSnapshot:
     async def get_data(self):
         raw_data = await self.assign_tasks()
 
-        print("Received raw data --> Now processing clean")
+        logging.info("Received raw data --> Now processing clean")
 
         clean_data = await self.data_chunker.chunk_and_clean(raw_data)
         return clean_data
@@ -83,7 +87,7 @@ class DataUploader:
         self.embedding_service = EmbeddingService()
 
     async def upload_data(self, scraped_data:List[AIAgentOnboardingDataResponse]):
-        print("Received campaign data in upload function.")
+        logging.info("Received campaign data in upload function.")
         collection_records = {}
         for record in scraped_data:
             session_id = record.meta_data.session_id
@@ -94,12 +98,12 @@ class DataUploader:
             batch_size = zillizconfig.ZILLIZ_INSERTION_BATCH_SIZE
 
             for i in range(0, len(records), batch_size):
-                print(f"Processing records {i} to {i + batch_size} for session {session_id}")
+                logging.info(f"Processing records {i} to {i + batch_size} for session {session_id}")
                 batch = records[i:i + batch_size]
                 texts = [record.content for record in batch]
 
                 vectors = await self.embedding_service.get_embeddings(texts)
-                print(f"Generated {len(vectors)} embeddings for session {session_id}")
+                logging.info(f"Generated {len(vectors)} embeddings for session {session_id}")
 
                 chunks_to_be_pushed = []
                 for chunk, vector in zip(batch, vectors):

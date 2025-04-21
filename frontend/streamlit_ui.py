@@ -9,10 +9,15 @@ import json
 import torch
 import urllib.response
 import random
+import logging
+import sys
+import warnings
+from pydantic_core import PydanticSerializationUnexpectedValue
 
 st.set_page_config(layout="wide")
 
 torch.classes.__path__ = []
+# warnings.filterwarnings("ignore", category=PydanticSerializationUnexpectedValue, module="pydantic_core")
 
 # function to generate data snapshot
 # this function is called when the "Scrape Webpages" button is clicked
@@ -25,27 +30,36 @@ async def generate_data_snapshot(valid_urls, selected_llm):
     files=[],
   )
 
-  print(f"Creating request for session {test_request.session_id} with LLM: {selected_llm}")
+  logging.info(f"Creating request for session {test_request.session_id} with LLM: {selected_llm}")
 
   for url in valid_urls:
-    subtype = urllib.request.urlopen(url).info().get_content_subtype()
-    if subtype == "html":
-      test_request.urls.append(url)
-    elif subtype == "pdf":
-      test_request.files.append(url)
-    else:
-      print(f"Unsupported content type: {subtype} for URL: {url}")
-
-  print(f"URLs: {test_request.urls}")
-  print(f"FILES: {test_request.files}")
+    try:
+      if len(url) > 0:
+        subtype = urllib.request.urlopen(url).info().get_content_subtype()
+        if subtype == "html":
+          test_request.urls.append(url)
+        elif subtype == "pdf":
+          test_request.files.append(url)
+        else:
+          logging.error(f"Unsupported content type: {subtype} for URL: {url}")
+          st.warning(f"Unsupported content type: {subtype} for URL: {url}")
+      else:
+        st.warning(f"Skipping URL: {url}")
+    except Exception as e:
+      logging.error(f"Error processing URL {url}: {e}")
+      st.warning(f"Error processing URL {url}: {e}")
 
   generator = GenerateDataSnapshot(test_request, llm_choice=selected_llm)
   responses = await generator.get_data()
   response_dicts = [response.model_dump() for response in responses]
 
-  output_file = f"data/data_snapshot_clean_{selected_llm}.json"
-  with open(output_file, "w") as f:
-    json.dump(response_dicts, f, indent=4)
+  # Save the data to a JSON file
+  with warnings.catch_warnings():
+    warnings.simplefilter('ignore', PydanticSerializationUnexpectedValue)
+    output_file = f"data/data_snapshot_clean_{selected_llm}.json"
+    with open(output_file, "w") as f:
+      json.dump(response_dicts, f, indent=4)
+      
   st.success(f"Scraping finished! Data saved to {output_file}")
 
   # Instantiate and call

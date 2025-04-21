@@ -5,6 +5,7 @@ import asyncio
 import json
 import tiktoken
 from pydantic import BaseModel, ValidationError
+import logging
 
 
 class MiniChunk(BaseModel):
@@ -74,7 +75,7 @@ class DataChunker:
 					validated_chunk = MiniChunk(**chunk)
 					valid_chunks.append(validated_chunk.dict())
 				except ValidationError as e:
-					print(f"Skipping invalid chunk: {chunk}, Error: {e}")
+					logging.warning(f"Skipping invalid chunk: {chunk}, Error: {e}")
 
 		return valid_chunks
 	
@@ -94,13 +95,10 @@ class DataChunker:
 				message_content = response.replace("```json", "").replace("```", "").strip()
 				parsed_data = json.loads(message_content)
 
-				print(f"\nPARSED LLM RESPONSE TYPE:\n {type(parsed_data)}\n")
-				print(f"\nPARSED LLM RESPONSE:\n {parsed_data}\n")
-
 				return self._parse_chunks(parsed_data)
 
 			except json.JSONDecodeError:
-				print("Error decoding JSON from LLM response")
+				logging.error("Error decoding JSON from LLM response")
 				return []
 
 	async def process_entry(self, raw_entry: AIAgentOnboardingDataResponse) -> List[AIAgentOnboardingDataResponse]:
@@ -132,7 +130,6 @@ class DataChunker:
 		"""
 		Processes raw data asynchronously with controlled concurrency.
 		"""
-		print('processing chunks')
 		# tasks = [self.process_entry(entry) for entry in raw_data if "content" in entry]
 		tasks = [self.process_entry(entry) for entry in raw_data if entry.content]
 		results = await asyncio.gather(*tasks)

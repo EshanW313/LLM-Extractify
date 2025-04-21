@@ -2,6 +2,7 @@ from fastapi import HTTPException
 from pymilvus import MilvusClient, DataType
 from config.config import zillizconfig
 from pymilvus.exceptions import MilvusException, ConnectError
+import logging
 
 class ZillizClient:
     def __init__(self):
@@ -14,8 +15,7 @@ class ZillizClient:
             self.client = MilvusClient(
                 uri=zillizconfig.ZILLIZ_CLOUD_URI,
                 token=zillizconfig.ZILLIZ_AUTH_TOKEN,
-               )
-                 
+            )
             print("Successfully connected to Zilliz Cloud")
         except ConnectError as e:
             print(f"Failed to connect to Zilliz Cloud: {str(e)}")
@@ -31,51 +31,52 @@ class ZillizClient:
                 return 
             print(f"Collection doesnt exist, Creating new collection: {collection_name}")
             schema = self.client.create_schema(
-            enable_dynamic_field=False,
-            description=f"Schema for {collection_name}'s collection.",
+                enable_dynamic_field=False,
+                description=f"Schema for {collection_name}'s collection.",
             )
             schema.add_field(
-            field_name="id",
-            datatype=DataType.INT64,
-            description="Unique identifier",
-            is_primary=True,
-            auto_id=True,
+                field_name="id",
+                datatype=DataType.INT64,
+                description="Unique identifier",
+                is_primary=True,
+                auto_id=True,
             )
             schema.add_field(
-            field_name="content",
-            datatype=DataType.VARCHAR,
-            description="QA pair",
-            max_length=65535
+                field_name="content",
+                datatype=DataType.VARCHAR,
+                description="QA pair",
+                max_length=65535
             )
             schema.add_field(
-            field_name="vector",
-            datatype=DataType.FLOAT_VECTOR,
-            description="Content Embedding",
-            dim=zillizconfig.VECTOR_DIMENSION
+                field_name="vector",
+                datatype=DataType.FLOAT_VECTOR,
+                description="Content Embedding",
+                dim=zillizconfig.VECTOR_DIMENSION
             )
             schema.add_field(
-            field_name="overview",
-            datatype=DataType.VARCHAR,
-            description="Question/Overview",
-            max_length=65535
+                field_name="overview",
+                datatype=DataType.VARCHAR,
+                description="Question/Overview",
+                max_length=65535
             )
             schema.add_field(
-            field_name="source",
-            datatype=DataType.VARCHAR,
-            description="Source from which data is extracted from",
-            max_length=256
+                field_name="source",
+                datatype=DataType.VARCHAR,
+                description="Source from which data is extracted from",
+                max_length=256
             )
             schema.add_field(
-            field_name="url",
-            datatype=DataType.VARCHAR,
-            description="URL from which data is extracted from",
-            max_length=500
+                field_name="url",
+                datatype=DataType.VARCHAR,
+                description="URL from which data is extracted from",
+                max_length=500
             )
             index_params = self.client.prepare_index_params()
             index_params.add_index(
-            field_name="vector", metric_type="COSINE", index_type="AUTOINDEX")
+                field_name="vector", metric_type="COSINE", index_type="AUTOINDEX"
+            )
             self.client.create_collection(
-            collection_name=collection_name, schema=schema, index_params=index_params, using="default"
+                collection_name=collection_name, schema=schema, index_params=index_params, using="default"
             )
         
             print(f"Collection {collection_name} created successfully.")

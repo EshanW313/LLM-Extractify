@@ -7,8 +7,17 @@ from firecrawl import FirecrawlApp
 from pydantic import BaseModel, ConfigDict
 from config.model_provider_config import ModelProviderConfig
 from mistralai import Mistral
+import logging
+import sys
 
 load_dotenv()
+
+# configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    stream=sys.stdout
+)
 
 class AIAgentOnboardRequest(BaseModel):
 	session_id: str

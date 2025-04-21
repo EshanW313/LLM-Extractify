@@ -1,6 +1,7 @@
 import json
 import asyncio
 from config.config import mistralai_config
+import logging
 
 
 class FileProcessor:
@@ -10,7 +11,7 @@ class FileProcessor:
         self.app = mistralai_config
 
     async def _perform_ocr(self, url: str):
-        print(f"Performing OCR on file: {url}")
+        logging.info(f"Performing OCR on file: {url}")
         async with self.semaphore:
             for attempt in range(3):
                 try:
