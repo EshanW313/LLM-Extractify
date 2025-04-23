@@ -68,15 +68,9 @@ poetry run streamlit run frontend/streamlit_ui.py
 
 - **Onboard URLs/files** (end-to-end processing):
   ```bash
-  poetry run python scripts/onboard.py --urls <url1> <url2> --files <file1> <file2>
+  poetry run python scripts/onboard.py
   ```
 
-- **Embed & Index** (for custom pipelines):
-  ```bash
-  poetry run python scripts/embed_index.py --collection <name>
-  ```
-
----
 
 ## 🧪 Testing
 
@@ -86,8 +80,6 @@ Run unit and integration tests under the `tests/` folder:
 # Single test
 poetry run python tests/test_onboard.py
 
-# All tests
-poetry run pytest
 ```
 
 **Model Evaluations** (on `feat/model-evals` branch):
@@ -114,13 +106,6 @@ Use these for quick testing or demos:
 - **Zilliz cluster access:** Confirm `ZILLIZ_CLOUD_URI` and `ZILLIZ_AUTH_TOKEN` match your cloud cluster configuration.
 - **Windows venv issues:** Use the PowerShell activation command above.
 
----
-
-## ✨ Contributing
-
-Feel free to open issues or submit pull requests. For new feature requests or major changes, please open an issue first to discuss your ideas.
 
 ---
-
-© 2025 Your Organization. Licensed under MIT.
 
