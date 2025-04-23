@@ -13,4 +13,6 @@ user: |
           }}, ...
         ]
         
+    Make sure that the generated output is a valid parsable JSON.
+    Now process the following input:
     <content>: {content}
