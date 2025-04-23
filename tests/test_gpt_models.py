@@ -38,7 +38,7 @@ async def test_model(model_name: str):
     generator = GenerateDataSnapshot(test_request, llm_choice="openai")
     generator.data_chunker.llm_config = llm_config
 
-    result = await generator.data_chunker.chunk_and_clean("Sample input text for testing")
+    result = await generator.get_data()
     print(f"Model: {model_name}\nResult: {result}\n")
 
 async def main():
