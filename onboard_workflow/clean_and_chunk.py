@@ -56,7 +56,7 @@ class DataChunker:
 		- dict with keys like 'data', 'response', 'content', 'chunks', or 'result'
 		- raw list of dicts
 		"""
-		logging.debug(f"""parsed data: {parsed_data}""")
+		logging.info(f"""parsed data: {parsed_data}""")
 		valid_chunks = []
 		# Normalize single dict with content and overview
 		if isinstance(parsed_data, dict) and "content" in parsed_data and "overview" in parsed_data:
@@ -95,6 +95,7 @@ class DataChunker:
 			try:
 				# Clean and parse JSON response
 				message_content = response.replace("```json", "").replace("```", "").strip()
+				logging.info(message_content)
 				parsed_data = json.loads(message_content)
 
 				return self._parse_chunks(parsed_data)
