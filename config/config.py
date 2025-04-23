@@ -35,6 +35,7 @@ class AIAgentOnboardingDataResponse(BaseModel):
 	content: str
 	overview: str
 	vector: Optional[List[float]] = Field("", description="Vector embedding of the content")
+	vector_openai: Optional[List[float]] = Field("", description="Vector embedding of the content")
 
 #setup firecrawl
 firecrawl_config: FirecrawlApp = FirecrawlApp(
@@ -77,6 +78,7 @@ mistralai_config: Mistral = Mistral(
 
 ### Setting up the Zilliz Config ###
 class ZillizConfig(BaseSettings):
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
     ZILLIZ_AUTH_TOKEN: str = os.getenv("ZILLIZ_AUTH_TOKEN")
     ZILLIZ_CLOUD_URI: str =os.getenv("ZILLIZ_CLOUD_URI")
     VECTOR_DIMENSION: int = 3072
