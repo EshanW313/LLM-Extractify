@@ -1,36 +1,126 @@
 # LLM-Extractify
 
-Installation steps for project:
-- make sure poetry is installed - pip install poetry
-- on CLI - poetry install 
-- dependencies for the project include OpenAI API KEY, Gemma API KEY, Firecrawl API KEY, Mistral API KEY, Zilliz AUTH TOKEN
-- replace Zilliz Cloud URI with your URL - in case a new cluster is to be created. Current cluster can be accessed with emails.
-- make sure all above keys are placed in your .env, .env.example provides sample template, replace keys with your keys in order to execute the project
+**LLM-Extractify** is an end-to-end data ingestion and extraction pipeline that leverages large language models (LLMs) and vector search to transform unstructured web content into structured, queryable knowledge. With support for multiple LLM providers and Firecrawl integration, this project simplifies the process of scraping, chunking, embedding, and indexing data.
 
-WINDOWS ISSUE:
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+---
 
+## 🚀 Features
 
-Some test URLs:
+- **Multi-Provider LLM Support:** OpenAI, Gemma, Mistral
+- **Web Scraping:** Integrated with Firecrawl for dynamic and semantic extraction
+- **Vector Storage:** Zilliz Milvus for efficient similarity search
+- **Configurable Pipeline:** YAML-based prompt templates, environmental config
+- **Streamlit UI:** Quick start interface for URL intake and retrieval testing
 
-https://foundation.wikimedia.org/wiki/Policy:Privacy_policy
-https://docs.llamaindex.ai/en/stable/examples/embeddings/huggingface/
+---
 
-https://www.sas.com/en/events/sas-innovate/faq.html
-https://aiconference.com/faq/
-https://foundation.wikimedia.org/wiki/Policy:Privacy_policy
+## 📦 Installation
 
-To test and run:
-poetry install should create a venv. Make sure venv is activated and running on your terminal - mac command
-source .venv/bin/activate
+1. **Install Poetry** (if not already installed):
+   ```bash
+   pip install poetry
+   ```
+2. **Clone the repo** and install dependencies:
+   ```bash
+   git clone https://github.com/your-org/llm-extractify.git
+   cd llm-extractify
+   poetry install
+   ```
+3. **Activate the virtual environment**:
+   ```bash
+   source .venv/bin/activate    # macOS/Linux
+   # or
+   .\.venv\\Scripts\\activate  # Windows PowerShell
+   ```
 
-For running streamlit follow command:
+---
+
+## 🔑 Configuration
+
+Create a `.env` file in the project root (use `.env.example` as a template) and populate the following keys:
+
+```ini
+OPENAI_API_KEY=
+GEMMA_API_KEY=
+MISTRAL_API_KEY=
+FIRECRAWL_API_KEY=
+ZILLIZ_AUTH_TOKEN=
+ZILLIZ_CLOUD_URI=
+```
+
+> **Note (Windows):** If you encounter execution policy issues, run:
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+> ```
+
+---
+
+## ⚙️ Usage
+
+### 1. Streamlit UI
+
+Launch the interactive frontend:
+```bash
 poetry run streamlit run frontend/streamlit_ui.py
+```
 
-The test folder provides certain tests to verify onboard function(end to end processing)
-To run any tests command to follow:
-poetry run python tests/{insert-test-filename-here.py}
-eg: poetry run python tests/test_onboard.py
+### 2. CLI Scripts
 
-For testing various models - switch to branch feat/model-evals
+- **Onboard URLs/files** (end-to-end processing):
+  ```bash
+  poetry run python scripts/onboard.py --urls <url1> <url2> --files <file1> <file2>
+  ```
+
+- **Embed & Index** (for custom pipelines):
+  ```bash
+  poetry run python scripts/embed_index.py --collection <name>
+  ```
+
+---
+
+## 🧪 Testing
+
+Run unit and integration tests under the `tests/` folder:
+
+```bash
+# Single test
+poetry run python tests/test_onboard.py
+
+# All tests
+poetry run pytest
+```
+
+**Model Evaluations** (on `feat/model-evals` branch):
+```bash
 poetry run python tests/test_gpt_models.py
+```
+
+---
+
+## 🌐 Sample URLs
+
+Use these for quick testing or demos:
+
+- https://foundation.wikimedia.org/wiki/Policy:Privacy_policy
+- https://docs.llamaindex.ai/en/stable/examples/embeddings/huggingface/
+- https://www.sas.com/en/events/sas-innovate/faq.html
+- https://aiconference.com/faq/
+
+---
+
+## 🛠️ Troubleshooting
+
+- **Missing API keys?** Ensure all keys are set in `.env`.
+- **Zilliz cluster access:** Confirm `ZILLIZ_CLOUD_URI` and `ZILLIZ_AUTH_TOKEN` match your cloud cluster configuration.
+- **Windows venv issues:** Use the PowerShell activation command above.
+
+---
+
+## ✨ Contributing
+
+Feel free to open issues or submit pull requests. For new feature requests or major changes, please open an issue first to discuss your ideas.
+
+---
+
+© 2025 Your Organization. Licensed under MIT.
+
