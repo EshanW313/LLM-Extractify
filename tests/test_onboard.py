@@ -6,7 +6,8 @@ import json
 async def generate_data_snapshot():
     test_request = AIAgentOnboardRequest(
         session_id="session_123",
-        urls=['https://hermanwandabwa.medium.com/web-scraping-product-driven-question-answer-pairs-214988cdfed4', 'https://www.crunchbase.com/'],
+        urls=['https://www.sas.com/en/events/sas-innovate/faq.html', 'https://aiconference.com/faq/'],
+        files=[]
     )
 
     generator = GenerateDataSnapshot(test_request)
