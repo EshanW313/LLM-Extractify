@@ -92,6 +92,7 @@ class DataUploader:
         for record in scraped_data:
             session_id = record.meta_data.session_id
             collection_records.setdefault(session_id, []).append(record)
+        logging.debug(collection_records)
 
         for session_id, records in collection_records.items():
             self.vector_db.create_collection(session_id)

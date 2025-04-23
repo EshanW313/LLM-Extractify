@@ -53,9 +53,10 @@ class DataChunker:
 		Normalize and parse LLM response into a list of validated MiniChunks.
 		Supports various response shapes like:
 		- single dict with content & overview
-		- dict with keys like 'data', 'response', 'content', or 'result'
+		- dict with keys like 'data', 'response', 'content', 'chunks', or 'result'
 		- raw list of dicts
 		"""
+		logging.info(f"""parsed data: {parsed_data}""")
 		valid_chunks = []
 		# Normalize single dict with content and overview
 		if isinstance(parsed_data, dict) and "content" in parsed_data and "overview" in parsed_data:
@@ -63,7 +64,7 @@ class DataChunker:
 
 		# Extract list from common response keys
 		elif isinstance(parsed_data, dict):
-			for key in ["data", "response", "content", "result"]:
+			for key in ["data", "response", "content", "result", "chunks"]:
 				if isinstance(parsed_data.get(key), list):
 					parsed_data = parsed_data[key]
 					break
@@ -77,6 +78,7 @@ class DataChunker:
 				except ValidationError as e:
 					logging.warning(f"Skipping invalid chunk: {chunk}, Error: {e}")
 
+		logging.debug(valid_chunks)
 		return valid_chunks
 	
 	async def call_llm(self, content: str) -> List[Dict[str, str]]:
@@ -93,6 +95,7 @@ class DataChunker:
 			try:
 				# Clean and parse JSON response
 				message_content = response.replace("```json", "").replace("```", "").strip()
+				logging.info(message_content)
 				parsed_data = json.loads(message_content)
 
 				return self._parse_chunks(parsed_data)
