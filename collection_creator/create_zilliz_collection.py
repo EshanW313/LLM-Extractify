@@ -10,8 +10,11 @@ class ZillizClient:
         self.connect()
 
     def connect(self):
+        """
+        Establish zilliz collection
+        """
         try:
-            print("Connecting to Zilliz Cloud...")
+            logging.info("Connecting to Zilliz Cloud...")
             self.client = MilvusClient(
                 uri=zillizconfig.ZILLIZ_CLOUD_URI,
                 token=zillizconfig.ZILLIZ_AUTH_TOKEN,
@@ -25,6 +28,11 @@ class ZillizClient:
             raise
         
     def create_collection(self, collection_name: str):
+        """
+        Curate collection from given collection name - is the model_provider_session_id
+        Input fields and schema includes id, vector, content, overview, source and url fields
+        Uses COSINE as similarity score - can also replace with L2 or other supported distance metric
+        """
         try:
             if collection_name in self.client.list_collections():
                 print(f"Collection {collection_name} exists.")
@@ -79,16 +87,19 @@ class ZillizClient:
                 collection_name=collection_name, schema=schema, index_params=index_params, using="default"
             )
         
-            print(f"Collection {collection_name} created successfully.")
+            logging.info(f"Collection {collection_name} created successfully.")
             return 
         except MilvusException as e:
-            print(f"Milvus error when creating collection {collection_name}: {str(e)}")
+            logging.error(f"Milvus error when creating collection {collection_name}: {str(e)}")
             raise HTTPException(status_code=500, detail="Milvus error when creating collection")
         except Exception as e:
-            print(f"Unexpected error when creating collection {collection_name}: {str(e)}")
+            logging.error(f"Unexpected error when creating collection {collection_name}: {str(e)}")
             raise HTTPException(status_code=500, detail="Unexpected error when creating collection")
 
     def insert_records(self, collection_name: str, records: list):
+        """
+        Inserts chunks into schema - validates  data and pushes it to given collection name
+        """
         try:
             entities = []
             for record in records:
@@ -99,12 +110,12 @@ class ZillizClient:
                     "url": record.meta_data.url or "",
                     "vector": record.vector
                 })
-            print(f"Inserting {len(records)} records into collection {collection_name}")
+            logging.info(f"Inserting {len(records)} records into collection {collection_name}")
             self.client.insert(collection_name=collection_name, data=entities)
-            print(f"Successfully inserted {len(records)} records into {collection_name}")
+            logging.info(f"Successfully inserted {len(records)} records into {collection_name}")
         except MilvusException as e:
-            print(f"Milvus error when inserting records into {collection_name}: {str(e)}")
+            logging.error(f"Milvus error when inserting records into {collection_name}: {str(e)}")
             raise HTTPException(status_code=500, detail="Milvus error when inserting records")
         except Exception as e:
-            print(f"Unexpected error when inserting records into {collection_name}: {str(e)}")
+            logging.error(f"Unexpected error when inserting records into {collection_name}: {str(e)}")
             raise HTTPException(status_code=500, detail="Unexpected error when inserting records")

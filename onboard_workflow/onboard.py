@@ -36,6 +36,10 @@ class GenerateDataSnapshot:
         logger.info(f"GenerateDataSnapshot initialized for session {self.request.session_id} with LLM: {llm_choice}")
 
     async def assign_tasks(self):
+        """
+        Asyncronously runs tasks for different processes - assigns urls to url processor, files to file processing
+        retreives and returns output as AIAgentOnboardingDataResponse object for adding to collection curator
+        """
         url_results = self.url_processor.get_scraped_data()
         file_task = asyncio.create_task(self.file_processor.process_files())
         logging.info("Waiting for URL and file processing tasks to complete...")
@@ -74,6 +78,8 @@ class GenerateDataSnapshot:
         return responses
 
     async def get_data(self):
+        """
+        This is the initally called method that initialised and assigns responses"""
         raw_data = await self.assign_tasks()
 
         logging.info("Received raw data --> Now processing clean")
@@ -87,6 +93,9 @@ class DataUploader:
         self.embedding_service = EmbeddingService()
 
     async def upload_data(self, scraped_data:List[AIAgentOnboardingDataResponse]):
+        """
+        Uploads data to collection curator
+        """
         logging.info("Received campaign data in upload function.")
         collection_records = {}
         for record in scraped_data:

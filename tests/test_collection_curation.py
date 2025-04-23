@@ -4,6 +4,9 @@ from onboard_workflow.onboard import DataUploader
 import asyncio
 
 async def test_upload_data_from_json():
+    """
+    dTest creating a query collection
+    """
     # Load test data from JSON file
     data_path = "data/data_snapshot_clean_llm_project.json"
     with open(data_path, "r", encoding="utf-8") as f:

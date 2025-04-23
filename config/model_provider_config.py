@@ -2,12 +2,13 @@ from pydantic import BaseModel
 from typing import Any, List, Dict
 from openai import OpenAI
 import yaml
-import google.generativeai as gen_ai
 from google import genai
-from google.genai import types
 import logging
 
 class ModelProviderConfig(BaseModel):
+    """
+    This class helps serve model using an API wrapper
+    """
     api: str = "openai"
     base_url: str = "https://api.openai.com/v1"
     messages: str = "MISSING"
@@ -23,9 +24,14 @@ class ModelProviderConfig(BaseModel):
     api_key: str = "MISSING"
 
     def update_params(self, **kwargs):
+        """
+        Update model params"""
         self.params.update(kwargs)
 
     def initialize_model_provider(self):
+        """
+        Initialise and establish connection - can adapt to both openai and gemma wrappers
+        """
         if self.api == "openai":
             return OpenAI(
                 base_url=self.base_url,
@@ -43,6 +49,9 @@ class ModelProviderConfig(BaseModel):
             return None
 
     def get_messages_from_yaml(self, yaml_file_path: str) -> List[Dict[str, str]]:
+        """
+        Read the prompt yaml, create a list of dict and pass it along to model later
+        """
         try:
             with open(yaml_file_path, 'r') as file:
                 yaml_content = yaml.safe_load(file)
@@ -57,6 +66,9 @@ class ModelProviderConfig(BaseModel):
             return []
         
     def format_messages(self, messages: List[Dict[str, str]], **kwargs) -> List[Dict[str, str]]:
+        """
+        Formats messages in wrapper specified format for specified roles
+        """
         if self.api == "openai":
             formatted_messages = []
             for message in messages:

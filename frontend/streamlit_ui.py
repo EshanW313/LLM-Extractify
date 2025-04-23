@@ -2,7 +2,7 @@ import streamlit as st
 # import validators
 from urllib.parse import urlparse
 import asyncio
-from config.config import AIAgentOnboardRequest, AIAgentOnboardingDataResponse
+from config.config import AIAgentOnboardRequest
 from onboard_workflow.onboard import GenerateDataSnapshot
 from onboard_workflow.onboard import DataUploader
 import json

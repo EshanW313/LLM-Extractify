@@ -5,6 +5,10 @@ from utils.services import EmbeddingService
 from typing import List, Dict, Any
 
 async def run_query():
+
+    """
+    Test embedding curation service and create a collection to search - model evals
+    """
     embedding_service = EmbeddingService()
     collection_names = ["session_123_OpenAI", "session_123_Gemma"]
     df = pd.read_csv('data/faq_test_queries.csv')

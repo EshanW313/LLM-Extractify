@@ -11,6 +11,9 @@ class FileProcessor:
         self.app = mistralai_config
 
     async def _perform_ocr(self, url: str):
+        """
+        Performs OCR for PDF and image files
+        """
         logging.info(f"Performing OCR on file: {url}")
         async with self.semaphore:
             for attempt in range(3):
@@ -36,5 +39,8 @@ class FileProcessor:
                             return str(e2)
 
     async def process_files(self):
+        """
+        Async task to help process multiple files at once without exceeding rate limits
+        """
         tasks = [self._perform_ocr(url) for url in self.files]
         return await asyncio.gather(*tasks)

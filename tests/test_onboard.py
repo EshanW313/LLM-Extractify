@@ -4,6 +4,9 @@ from onboard_workflow.onboard import GenerateDataSnapshot
 import json
 
 async def generate_data_snapshot():
+    """
+    Test end to end snapshot generation
+    """
     test_request = AIAgentOnboardRequest(
         session_id="session_123",
         urls=['https://hermanwandabwa.medium.com/web-scraping-product-driven-question-answer-pairs-214988cdfed4', 'https://www.crunchbase.com/'],

@@ -3,6 +3,9 @@ from collection_creator.query_milvus import ZillizVectorSearch
 from utils.services import EmbeddingService
 
 async def run_query():
+    """
+    Single Query Retreival for evals
+    """
     embedding_service = EmbeddingService()
     collection_names = ["session_123_OpenAI", "session_123_Gemma"]
     query = 'Can I attend the AI Conference online?'

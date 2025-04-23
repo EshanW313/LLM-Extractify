@@ -19,6 +19,7 @@ logging.basicConfig(
     stream=sys.stdout
 )
 
+#pydantic validations
 class AIAgentOnboardRequest(BaseModel):
 	session_id: str
 	urls: List[str]
@@ -35,6 +36,7 @@ class AIAgentOnboardingDataResponse(BaseModel):
 	overview: str
 	vector: Optional[List[float]] = Field("", description="Vector embedding of the content")
 
+#setup firecrawl
 firecrawl_config: FirecrawlApp = FirecrawlApp(
 	api_key=os.getenv("FIRECRAWL_API_KEY")
 )
@@ -68,12 +70,13 @@ chunk_and_clean_task_app.update_params(
 	response_format={"type": "json_object"}
 )
 
+#setup mistral for OCR
 mistralai_config: Mistral = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY")
 )
 
+### Setting up the Zilliz Config ###
 class ZillizConfig(BaseSettings):
-    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
     ZILLIZ_AUTH_TOKEN: str = os.getenv("ZILLIZ_AUTH_TOKEN")
     ZILLIZ_CLOUD_URI: str =os.getenv("ZILLIZ_CLOUD_URI")
     VECTOR_DIMENSION: int = 3072
@@ -81,6 +84,7 @@ class ZillizConfig(BaseSettings):
 
 zillizconfig = ZillizConfig()
 
+### Setting up the Gemma Config ###
 class GoogleAIConfig(ModelProviderConfig):
     model_config = ConfigDict(extra="allow")
     api: str = "google_ai"

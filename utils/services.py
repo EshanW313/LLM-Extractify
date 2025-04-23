@@ -5,12 +5,17 @@ from config.config import zillizconfig
 import numpy as np
 
 class EmbeddingService:
+    """
+    This class provides services for creating and generating passage as well as query embedddings
+    """
     def __init__(self):
         model_name = "jinaai/jina-embeddings-v3"
         self.model = SentenceTransformer(model_name, trust_remote_code=True)
         self.task = "retrieval.passage"
 
     def _pad_embedding(self, vector: np.ndarray) -> List[float]:
+        """
+        Pad """
         vector = vector.tolist()
         current_dim = len(vector)
         target_dim = zillizconfig.VECTOR_DIMENSION
