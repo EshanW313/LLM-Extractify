@@ -112,13 +112,15 @@ class DataUploader:
                 texts = [record.content for record in batch]
 
                 vectors = await self.embedding_service.get_embeddings(texts)
+                vectors_openai = await self.embedding_service.get_openaiembeddings(texts)
                 logging.info(f"Generated {len(vectors)} embeddings for session {session_id}")
 
                 chunks_to_be_pushed = []
-                for chunk, vector in zip(batch, vectors):
-                    if len(vector) != zillizconfig.VECTOR_DIMENSION:
+                for chunk, vector, vector_openai in zip(batch, vectors, vectors_openai):
+                    if len(vector) != zillizconfig.VECTOR_DIMENSION or len(vector_openai) != zillizconfig.VECTOR_DIMENSION :
                         raise HTTPException(status_code=500, detail="Incorrect embedding dimension")
                     chunk.vector = vector
+                    chunk.vector_openai = vector_openai
                     chunks_to_be_pushed.append(chunk)
 
                 self.vector_db.insert_records(session_id, chunks_to_be_pushed)

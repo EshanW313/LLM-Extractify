@@ -1,1482 +1,585 @@
 [
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Can I attend this event virtually",
         "overview": "The AI Conference 2025 is an in-person event only.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Where is this event located",
         "overview": "The event is located at Pier 48, Mission Rock, San Francisco, CA 94158.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "When is the event",
         "overview": "The AI Conference takes place on September 17th \u2013 18th, 2025 beginning at 8:00 AM PST.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "How can my company sponsor The AI Conference",
         "overview": "Visit aiconference.com/sponsors/ for all exhibitor opportunities.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Where can I park My Car",
         "overview": "The most up to date parking info can be found at Park Wiz.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "How much does The AI Conference 2025 cost",
         "overview": "The conference has Early Bird pricing while supplies last; standard passes pricing is available on the registration page after launch.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Under what circumstances do you offer discounts",
         "overview": "Group rates are available to groups of three or more attendees registering together.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Do you offer discounts or complimentary passes",
         "overview": "Discounted group rates are available for groups of two or more people registering together.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "What is the Cancellation policy",
         "overview": "The AI Conference offers refunds up to 30 days prior to an event with a 5% fee for all refunds.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Is there a code of conduct",
         "overview": "The code of conduct can be viewed at aiconference.com/code-of-conduct.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "I have a press, vendor, or speaker pass. What now",
         "overview": "The AI Conference will send emails with information needed to navigate the event.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Can I present at the conference",
         "overview": "Submissions for this year\u2019s conference speakers will open soon.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "How do I get a press pass",
         "overview": "Members of the press can apply for a media pass shortly.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Who will be speaking at the conference",
         "overview": "The conference features 2 days, 4 tracks, and 85+ speakers.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "How long will presentations be",
         "overview": "Presentations will include keynote presentations lasting 40 minutes and featured contributors lasting 20 minutes.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "What topics will be covered",
         "overview": "Topics include AGI development, Foundation Models, Generative AI, Neural Architectures, AI Infrastructure, Ethics, and more.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Are there multiple presentation areas",
         "overview": "There are 4 main areas including presentation halls, a vendor area, and networking areas.",
-        "vector": ""
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
+            "session_id": "openai_session_2909584092",
             "source": "web",
             "url": "https://aiconference.com/faq/"
         },
         "content": "Which hotels are near the event",
-        "overview": "Hotels near the event include Luma Hotel San Francisco, Hotel VIA, SoMa House, and Hotel Fiona.",
-        "vector": ""
+        "overview": "Nearby hotels include Luma Hotel San Francisco, Hotel VIA, SoMa House, and Hotel Fiona.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Circle Home Plus Circle Parental Controls App User Guide",
-        "overview": "Introduction to Circle Home Plus and its parental controls app",
-        "vector": ""
+        "content": "What is SAS Innovate 2025 and who should attend? SAS Innovate 2025 is the largest SAS event uniting business leaders technical users and SAS partners in one collaborative space to focus on data and AI. From executives data scientists engineers and analysts to our partners across industries the event offers amazing content for everyone and every role.",
+        "overview": "Description of SAS Innovate 2025 and its target audience.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Meet Circle",
-        "overview": "Introduction to the Circle community.",
-        "vector": ""
+        "content": "Will there be a SAS Explore in 2025? No. However all the great content our technical users have come to expect at SAS Explore hands-on learning technical sessions super demos and more will be offered at SAS Innovate.",
+        "overview": "Information about the absence of SAS Explore in 2025.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Thanks for joining the Circle community.",
-        "overview": "Appreciation for joining the community.",
-        "vector": ""
+        "content": "When is it? Tuesday May 6 to Friday May 9 2025.",
+        "overview": "Dates of the SAS Innovate 2025 event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "We're here to help families like yours find balance in today's digital world.",
-        "overview": "Purpose of Circle in helping families manage digital content.",
-        "vector": ""
+        "content": "Where will it be held? Hilton Orlando in Orlando Florida USA. The hotel address is 6001 Destination Parkway Orlando FL 32819.",
+        "overview": "Location details for SAS Innovate 2025.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "This guide has been designed to guide you along the way in using Circle to manage content and time spent online.",
-        "overview": "Purpose of the guide for using Circle.",
-        "vector": ""
+        "content": "Will there be a streaming option to view sessions online? SAS Innovate will offer complimentary live streaming and on-demand viewing of the general sessions and many breakout sessions on popular topics.",
+        "overview": "Details about streaming options for the event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "If you run into questions or issues, don't hesitate to reach out.",
-        "overview": "Encouragement to seek help if needed.",
-        "vector": ""
+        "content": "How much does it cost to attend? Please visit the Pricing page for details on pricing tiers and group discounts.",
+        "overview": "Information regarding attendance costs.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "We're here to help!",
-        "overview": "Reassurance of support from the Circle team.",
-        "vector": ""
+        "content": "Are meals included during the event? Lunch will be provided on Wednesday May 7 and Thursday May 8. Light snacks and beverages will also be available periodically throughout each day in the Innovation Hub.",
+        "overview": "Details about meal provisions during the event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "The Circle team",
-        "overview": "Signature from the Circle team.",
-        "vector": ""
+        "content": "Who is considered a full-time student? A student enrolled in at least 12 credit hours at a postsecondary academic institution. You will be asked to show your student credentials on-site at registration.",
+        "overview": "Definition of a full-time student for the event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "support.meetcircle.com",
-        "overview": "Support website for Circle.",
-        "vector": ""
+        "content": "Can you help me request a travel visa? Attendees who need a travel visa should send an email request to SASInnovateReg@sas.com with Visa inquiry included in the subject line.",
+        "overview": "Instructions for requesting a travel visa.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "help@meetcircle.com",
-        "overview": "Contact email for Circle support.",
-        "vector": ""
+        "content": "What are the conference hotel blocks and rates? Please register before booking your hotel room to secure discounted rates at one of our two conference hotels.",
+        "overview": "Information about hotel blocks and rates.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Getting familiar with Circle",
-        "overview": "Introduction to Circle and its functionalities.",
-        "vector": ""
+        "content": "What is included in the SAS hotel group rates? Attendees who book through our block will receive priority access to discounted group room rates and discounted resort fees.",
+        "overview": "Details on benefits of booking through the hotel group rates.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Pause the Internet with the push of a button",
-        "overview": "Feature that allows users to pause internet access easily.",
-        "vector": ""
+        "content": "What is the shuttle schedule between the DoubleTree and the Hilton Orlando? Tuesday 5/6\u201412:00PM to 7:30PM Wednesday 5/7\u20146:45AM to 7:30PM Thursday 5/8\u20146:45AM to 6:30PM Friday 5/9\u20148AM to 12:30PM.",
+        "overview": "Shuttle schedule information for the event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Resuming Internet access after being paused",
-        "overview": "Functionality to unpause internet access.",
-        "vector": ""
+        "content": "Do you offer transportation from the airport to the conference hotels? Transportation from the airport is not provided. All attendees are on their own for any costs associated with airport transportation.",
+        "overview": "Information about airport transportation.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Keep track of your family and their mobile devices. See where your family's mobile devices are at a point in time with the tap of a button. Kids get notified when you request their location.",
-        "overview": "Feature for tracking family mobile devices and notifying kids about location requests.",
-        "vector": ""
+        "content": "How do I get from the airport to the conference hotels? Hilton Orlando and the DoubleTree by Hilton Orlando at SeaWorld are conveniently located approximately 13 miles from Orlando International Airport (MCO).",
+        "overview": "Transportation options from the airport to hotels.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Provide extra online time for your family",
-        "overview": "Feature that allows users to grant additional online time.",
-        "vector": ""
+        "content": "Is it cheaper to take a taxi or ride-sharing app from the Orlando airport? While taxis are available taking a ride share is generally cheaper and offers more predictable fares.",
+        "overview": "Cost comparison between taxi and ride-sharing from the airport.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Compare online time for each profile across all devices",
-        "overview": "Functionality to analyze online time usage per profile.",
-        "vector": ""
+        "content": "Are there preordered airport shuttle services? No.",
+        "overview": "Information about airport shuttle services.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "A popular online service made up of sites and apps",
-        "overview": "Description of a service that includes various online platforms.",
-        "vector": ""
+        "content": "How else can I get around Orlando? Guests staying at conference hotels will receive free passes for the I-Ride Trolley for the duration of your stay.",
+        "overview": "Details on transportation options within Orlando.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "An individual source of online content",
-        "overview": "Definition of a site as a source of content.",
-        "vector": ""
+        "content": "Are there parking passes available? We do have a limited number of parking passes at both conference hotels that are available on a first come first served basis.",
+        "overview": "Information about parking passes availability.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Collection of sites/platforms sharing a common purpose",
-        "overview": "Definition of a category as a group of related sites.",
-        "vector": ""
+        "content": "Can I bring a guest? There are a limited number of guest passes available exclusively for SAS Innovate After Hours on the streets of New York at Universal Studios Florida.",
+        "overview": "Details about guest passes for the event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Detailed breakdown of every site visited by a profile across all devices",
-        "overview": "Feature that provides a history of site visits for each profile.",
-        "vector": ""
+        "content": "Where and when do I pick up my guest badge? Guest badges can be picked up on Thursday May 8 from the registration kiosks.",
+        "overview": "Information on guest badge pickup.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Schedule overnight offline time for each family member to make late-night scrolling a thing of the past",
-        "overview": "Description of the feature that allows scheduling offline time for family members.",
-        "vector": ""
+        "content": "What is the dress code for SAS Innovate? Smart casual. We\u2019re keeping it professional but we\u2019re definitely not formal.",
+        "overview": "Dress code for the event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Ability to match each family member's age and interests with age-appropriate online content",
-        "overview": "Description of the feature that customizes online content based on age and interests.",
-        "vector": ""
+        "content": "How do I register for training tutorials or SAS certification exams? When you register for the event you will have the option to review and select from these offerings and add them to your registration.",
+        "overview": "Instructions for registering for training and certification.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Based on a set of pre-determined rules, network traffic is controlled",
-        "overview": "Explanation of how network traffic is managed through pre-determined rules.",
-        "vector": ""
+        "content": "How do I email the conference registrar? You can contact the conference registrar at SASInnovateReg@sas.com.",
+        "overview": "Contact information for the conference registrar.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Online content can be freely accessed, and it won't contribute to daily Time Limits or appear in Usage History",
-        "overview": "Description of unmanaged online content access and its impact on usage tracking.",
-        "vector": ""
+        "content": "How do you pay for SAS Innovate with SAS Training Points? SAS Training Points can be used to pay for the pre-conference training and/or the entire event.",
+        "overview": "Payment information using SAS Training Points.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Content is tracked and managed by Circle",
-        "overview": "Overview of how Circle manages and tracks online content.",
-        "vector": ""
+        "content": "How can you find out your SAS Training Points account number and balance? Contact your Customer Training Advisor or reach out to training@sas.com.",
+        "overview": "Instructions for checking SAS Training Points account details.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Content from this source is blocked by Circle",
-        "overview": "Explanation of how Circle blocks certain content sources.",
-        "vector": ""
+        "content": "What is the cost when you pay with SAS Training Points? The number of SAS Training Points deducted will be equivalent to the advertised registration price at the time of registration.",
+        "overview": "Cost details when using SAS Training Points.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Limit daily online time for platforms, categories, and total online time across all devices",
-        "overview": "Description of the feature that sets limits on daily online time.",
-        "vector": ""
+        "content": "Can attendees from outside of the US pay with SAS Training Points? Yes but the number of points deducted from your account will reflect the payment amount in your local currency.",
+        "overview": "Information on international attendees using SAS Training Points.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Any Internet-connected equipment (smartphone, tablet, laptop, gaming console, etc.); plus smart home appliances IoT devices; smart TVs, Wi-Fi speakers, and thermostats",
-        "overview": "Definition of what constitutes Internet-connected equipment.",
-        "vector": ""
+        "content": "How does a current attendee change their payment method to SAS Training Points? SAS Training Points can be used retroactively on existing registrations.",
+        "overview": "Instructions for changing payment method to SAS Training Points.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Any Internet-connected device that you manage with the Circle App, not just your kids' devices",
-        "overview": "Description of kid devices managed by the Circle App.",
-        "vector": ""
+        "content": "I registered but didn\u2019t receive a confirmation email. What should I do? Please check your spam folder and add sas.com as a safe sender so you can receive event updates.",
+        "overview": "Instructions for handling missing confirmation emails.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Devices not assigned to a profile are automatically unmanaged by Circle",
-        "overview": "Explanation of how unassigned devices are treated by Circle.",
-        "vector": ""
+        "content": "Will there be a mobile app? Yes! The event app will be available for download shortly before the event starts.",
+        "overview": "Information about the event mobile app.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Circle settings are shared across all devices assigned to a family member profile",
-        "overview": "Overview of how Circle settings are applied to devices under a family member profile.",
-        "vector": ""
+        "content": "How do I purchase group passes? View our step-by-step guide to buy group passes for your team.",
+        "overview": "Instructions for purchasing group passes.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Device that distributes Internet to multiple devices, usually over Wi-Fi",
-        "overview": "Definition of a router in the context of network distribution.",
-        "vector": ""
+        "content": "What are the group rates? Groups of 2-3: $500 per person. Groups of 4 or more: $400 per person.",
+        "overview": "Details on group rates for the event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Install the Circle Parental Controls App Apple iOS 12 or newer Android 6.0 Marshmallow or newer To find the app search Circle Parental Controls in the App Store iOS or Google Play Android",
-        "overview": "Instructions for installing the Circle Parental Controls App on iOS and Android devices",
-        "vector": ""
+        "content": "Is there a deadline for purchasing group passes? The group passes are available while supplies last so book soon!",
+        "overview": "Information about the deadline for group pass purchases.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "Using the Circle App",
-        "overview": "This section introduces the Circle App.",
-        "vector": ""
+        "content": "Do I need to register by a certain date? You will be able to register at any point until the event begins on May 6 2025.",
+        "overview": "Registration timeline for the event.",
+        "vector": "",
+        "vector_openai": ""
     },
     {
         "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
+            "session_id": "openai_session_2909584092",
+            "source": "web",
+            "url": "https://www.sas.com/en/events/sas-innovate/faq.html"
         },
-        "content": "The Home Screen",
-        "overview": "Introduction to the Home Screen of the application.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "From the home screen, you can find a list of all Circle devices by tapping the devices icon in the top right portion of the screen.",
-        "overview": "Instructions on how to access the list of Circle devices from the home screen.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "From the profile screen, you can find a list of all assigned devices by selecting devices.",
-        "overview": "Instructions on how to access assigned devices from the profile screen.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Tap on any device from the device list to see the device settings.",
-        "overview": "Instructions on how to view device settings by tapping on a device.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "The assigned profile can be edited by tapping the text.",
-        "overview": "Information on how to edit the assigned profile of a device.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "The device name can be edited by tapping the text.",
-        "overview": "Information on how to edit the device name.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "The manufacturer and device ID can help you identify the device.",
-        "overview": "Details on the manufacturer and device ID for identification purposes.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "If it's a kid device with the Circle App installed and configured, you'll see the VPN status.",
-        "overview": "Information on VPN status for kid devices.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "The option to remove device deletes this device from Circle.",
-        "overview": "Information on how to remove a device from Circle.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "If you don't want to manage this device with Circle, set it to unmanaged.",
-        "overview": "Instructions on how to set a device to unmanaged.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "A pause button is available just for this single device.",
-        "overview": "Information on the pause button feature for individual devices.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "The dashboard is where your family can check their online time for the day.",
-        "overview": "Description of the dashboard's purpose for checking online time.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "If you've assigned a family member's device to a profile, they can use the dashboard from the Circle App or a web browser.",
-        "overview": "Instructions on how family members can access the dashboard.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "On the dashboard, you'll see information for the various Circle features you've enabled for that family member.",
-        "overview": "Overview of the information displayed on the dashboard for family members.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "There's a general profile card, where you can see the device name associated with Circle.",
-        "overview": "Information about the general profile card on the dashboard.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Push notifications let your family members know about changes to their Internet access throughout the day from Circle.",
-        "overview": "Description of push notifications related to Internet access changes.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "They'll be notified about Circle features like Pause, Time Limits, Focus Times, Bedtimes, and more.",
-        "overview": "Details on the types of notifications family members will receive.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Parental controls right at your fingertips",
-        "overview": "Introduction to the parental control features offered.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Simplify how you manage your family's online screen time",
-        "overview": "Explanation of how the features help manage online screen time.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Circle's features let you set limits, filter content, and keep tabs on every connected device",
-        "overview": "Details on the specific functionalities of Circle's parental control features.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Set online content filters that match each family member's age and interests. When setting a filter, you first must select a filter level as a starting place, which you can always customize to be the right fit for each family member.",
-        "overview": "Introduction to setting online content filters for family members.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Grants access to kid-safe experiences like the education category but filters out content not appropriate for children most restrictive level.",
-        "overview": "Description of the Kid filter level.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Grants access to most general-use platforms and categories without mature or adult-oriented content.",
-        "overview": "Description of the Teen filter level.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Grants access to nearly all platforms categories and apps though explicit content is filtered out by default.",
-        "overview": "Description of the Adult filter level.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Means that Circle won't filter content track usage or history or limit time online for any assigned devices.",
-        "overview": "Description of the None filter level.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "After you select a filter level you can customize it by setting content to allowed not allowed or unmanaged by tapping the text-box across from the platform or category name.",
-        "overview": "Instructions on customizing filter settings.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Content from this source is available and tracked by Circle.",
-        "overview": "Information about allowed content.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Internet traffic is allowed to freely come and go from this site even if Circle is set on Pause Bedtime or Focus Time. Traffic to any unmanaged site does not count toward Time Limits.",
-        "overview": "Details on unmanaged sites and internet traffic.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Tapping the Custom Sites section on the right lets you create a filter setting for an individual site. Follow the steps to type in the name of the site and pick a filter setting for it.",
-        "overview": "Instructions for creating custom site filters.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "When enabled enforces an optional YouTube setting to filter out potentially mature videos and livestreaming.",
-        "overview": "Description of the YouTube restricted setting.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Category descriptions are intended to describe the types of content Circle will filter.",
-        "overview": "Introduction to the purpose of category descriptions for content filtering.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Entertainment includes visual arts, literature, humor, film, arts venues, and more.",
-        "overview": "Description of the Entertainment category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Music includes audio streaming and downloading, artist sites, and more.",
-        "overview": "Description of the Music category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Online Games includes video games and board game sites.",
-        "overview": "Description of the Online Games category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Sports & Recreation includes sports media, professional teams, and recreation.",
-        "overview": "Description of the Sports & Recreation category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Video includes video streaming and downloading.",
-        "overview": "Description of the Video category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Business includes employment, job postings, finance, and industry services.",
-        "overview": "Description of the Business category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Education includes instructional content, teaching, educational institutions, and career prep.",
-        "overview": "Description of the Education category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Science & Technology includes physical and social sciences as well as computers and artificial intelligence.",
-        "overview": "Description of the Science & Technology category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Chat & Forums includes messaging services, online chat, bulletin boards, and forums.",
-        "overview": "Description of the Chat & Forums category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Social Media includes personal and professional networking communities.",
-        "overview": "Description of the Social Media category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "App Stores & Downloads includes digital software distribution for apps, programs, and more.",
-        "overview": "Description of the App Stores & Downloads category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Email includes electronic mail providers.",
-        "overview": "Description of the Email category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Blogs & Personal Sites includes blogging platforms and sites with personal content.",
-        "overview": "Description of the Blogs & Personal Sites category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Government & Politics includes government services, politics, lobbying, and military.",
-        "overview": "Description of the Government & Politics category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Health includes personal health and fitness.",
-        "overview": "Description of the Health category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Home & Family includes cooking, parenting, home-decorating, and more.",
-        "overview": "Description of the Home & Family category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Issues & Lifestyles includes social issues, philosophy, religion, and more.",
-        "overview": "Description of the Issues & Lifestyles category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "News includes journalism, commentary, and other reporting.",
-        "overview": "Description of the News category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Online Shopping includes ecommerce retailers and classified ads.",
-        "overview": "Description of the Online Shopping category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Travel includes maps, travel, and tourism.",
-        "overview": "Description of the Travel category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Photo includes photography information and sharing.",
-        "overview": "Description of the Photo category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Dating includes online dating and match-making.",
-        "overview": "Description of the Dating category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Explicit Content includes graphic and explicit adult content.",
-        "overview": "Description of the Explicit Content category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Gambling includes betting sites, lotteries, casinos, racetracks and more.",
-        "overview": "Description of the Gambling category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Mature includes adult-specific content age 18 or 21.",
-        "overview": "Description of the Mature category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "VPNs & Proxies includes internet privacy and network routing services.",
-        "overview": "Description of the VPNs & Proxies category.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Certain categories are not allowed by default based on the filter level set.",
-        "overview": "Information about restrictions on certain categories.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "For a full list of apps and sites that Circle covers, please read more.",
-        "overview": "Note about accessing the full list of covered apps and sites.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Limit online time for individual apps sites or categories You can set limits by day category of content or for individual apps and sites",
-        "overview": "This section explains the purpose of setting time limits for online activities.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Tap on a profile from the home screen then select Time Limits from the feature list Turn Time Limits on by tapping the enable switch in the top right Set an all-day cap by tapping Daily Time Limit at the top of the list Set an all-day cap by tapping the selector beneath the profile picture Create an alternate schedule for certain days of the week by tapping the add weekend icon at the top of the screen Manage time as a reward instead of giving a set limit every day by selecting by reward only for a Time Limit",
-        "overview": "This section provides instructions on how to set time limits for online activities.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Make late-night scrolling a thing of the past Bedtime shuts off Internet access for every device assigned to a profile through the night so everybody in your family can get the sleep they need without distraction You can even set a separate weekend Bedtime",
-        "overview": "This section describes the Bedtime feature that restricts internet access during the night.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "When setting Bedtime the day of the week represents the night a Bedtime begins Typical weekday Bedtime spans Sunday to Thursday with weekend nights on Friday and Saturday",
-        "overview": "This section explains the typical schedule for setting Bedtime.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Tap on a profile from the home screen then select Bedtime from the feature list Turn Bedtime on by tapping the enable switch in the top right Set the Bedtime by tapping on the days to toggle them on or off and tap Bedtime and Awake times to set the clock Tap add weekend to set an alternate Bedtime for certain days of the week Press save to finish",
-        "overview": "This section provides instructions on how to set the Bedtime feature.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Create a customized screen time schedule that benefits everyone in your family. Preset time offline for the important moments like practicing piano or dinner with the family.",
-        "overview": "Instructions for creating a family screen time schedule.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Tap on a profile from the home screen, then select Focus Time from the feature list. Tap the down arrow or select from your existing Focus Time below. Set the Focus Time by typing in a name for the Focus Time, selecting which days you'd like to activate, and scroll through the start and end times to set the clock. Press done to finish, then save to keep all your changes for this profile.",
-        "overview": "Steps to set up Focus Time for a profile.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Pause the Internet with the tap of a button for individual family members or the whole house. Tapping again will unpause to resume Internet. Unmanaged devices will always maintain Internet access.",
-        "overview": "Explanation of how to pause the Internet for family members or the entire house.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To pause all Circle devices at once, press the pause button on the home screen, then confirm. Press the same button again to unpause.",
-        "overview": "Instructions for pausing all Circle devices simultaneously.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To pause a family member, tap on their profile from the home screen, then tap the pause button in the top-left corner of the screen. Press the same button again to unpause.",
-        "overview": "Steps to pause Internet access for a specific family member.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To pause a single device, tap the devices icon in the top-right of the home screen, then tap on a device from the list, then press the pause button on the bottom of the screen. Press the same button again to unpause.",
-        "overview": "Instructions for pausing a specific device.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Find the current location for a family member's mobile devices. To use Location, the devices you want to locate must have the Circle App and VPN installed with location services enabled. Notification services must also be enabled on the parents' and kids' devices. Additionally, Location will only work once the mobile device is assigned to the kid's profile that you wish to location.",
-        "overview": "Instructions for using the Location feature to find a family member's mobile device.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To locate a family member's device, tap on a profile from the home screen, then select location from the feature list. You might have to pick from a list of devices to locate. Wait for Circle to locate the device. When the device has been found, you'll see a marker on the map. At the bottom of the screen, you'll see the time when the location was received. Tap refresh to see their location again.",
-        "overview": "Steps to locate a family member's device using the Circle App.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Locating a device will only work if location services are enabled on the device you are locating, and Circle will notify you if this is the reason a device cannot be located.",
-        "overview": "Requirement for location services to be enabled for successful device locating.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Circle does not store a history of previous locations.",
-        "overview": "Information about Circle's policy on storing location history.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "History displays a chronological list of sites viewed by a profile. Toggle between Filtered and Visited to see which sites were prevented or accessed.",
-        "overview": "Description of the History feature that shows sites viewed by a family member.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To see a family member's History, tap on a profile from the home screen, then select History in the feature list. Select visited to see sites that a family member accessed. Toggle over to filtered to see sites that Circle blocked because of a family member's filter settings.",
-        "overview": "Instructions for viewing a family member's browsing history in the Circle App.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To take action on a History entry, tap on it and select from the following options: Visit website, which opens your web browser and takes you to the home page of the site, Set as allowed, Set as not allowed, Set as unmanaged. You can edit any of these custom filters by selecting Filter from the profile features list, then tapping custom filter on the bottom of the screen.",
-        "overview": "Options available for taking action on a history entry in the Circle App.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Compare time online today last week or months past while viewing the total time spent online per category and platform",
-        "overview": "Instructions on comparing online time across different periods and categories",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "See a list of sites and platforms by tapping on a category A pop-up menu will allow you to take action on a particular category that contributed total online time",
-        "overview": "How to view sites and platforms and take action on categories contributing to online time",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "You may notice total online time does not always match the sum of usage from visible categories This is because each platform's algorithm is unique and may contribute differently to active screen time versus background traffic",
-        "overview": "Explanation of discrepancies in total online time due to platform algorithms",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To see a family member's Usage Select Usage in the feature list",
-        "overview": "Steps to view a family member's online usage",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "At the top of the screen you can select between usage by day week or month",
-        "overview": "Options for viewing usage data by different time frames",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Next you'll see a summary of total time Below that you can scroll from the current period and into past usage",
-        "overview": "Viewing summary of total time and scrolling through past usage",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Take action on a Usage entry by following the same steps outlined above for History",
-        "overview": "Instructions for taking action on usage entries",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "In addition to the popular apps and websites visible by default Circle can help you manage IOOs more through Usage",
-        "overview": "Circle's capability to manage IOOs through usage data",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Rewards are an easy way to send family members extra online time for an individual day Rewards expire at midnight so original time limits are reset the following day",
-        "overview": "Information about rewards for extra online time and their expiration",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To send a Reward Tap on a profile from the home screen then tap the star in the top right corner or select Rewards from the feature list",
-        "overview": "Steps to send a reward to a family member",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Pick from three types of rewards Extend Time Limit Late Bedtime or Disable Focus Time",
-        "overview": "Types of rewards available for family members",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Set the Reward based on the existing settings and press send to finish",
-        "overview": "Instructions for setting and sending a reward",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To edit or cancel a Reward Tap on a profile from the home screen and select Rewards from the feature list",
-        "overview": "Steps to edit or cancel a reward",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To edit a Reward tap the edit existing rewards button to make the appropriate changes",
-        "overview": "Instructions for editing an existing reward",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "To cancel a Reward tap the edit existing rewards button and swipe to delete it from the list",
-        "overview": "Instructions for canceling a reward",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Circle Home Plus device",
-        "overview": "Introduction to the Circle Home Plus device",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Circle Home Plus pairs directly with your router and inspects all the non-encrypted Internet traffic coming through your home network. You won't need to install software or adjust settings on your devices to manage them.",
-        "overview": "Description of Circle Home Plus functionality and ease of use.",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "If you don't have a Circle Home Plus open the Circle App and press get Circle Home Plus from the home screen menu",
-        "overview": "Instructions for obtaining Circle Home Plus through the Circle App",
-        "vector": ""
-    },
-    {
-        "meta_data": {
-            "session_id": "session_123_OpenAI",
-            "source": "KB",
-            "url": "https://cdn.shopify.com/s/files/1/1015/1783/files/User_Guide_5.5x8.5_2021_v3_Digital.pdf"
-        },
-        "content": "Support support.meetcircle.com",
-        "overview": "Contact information for support at MeetCircle.",
-        "vector": ""
+        "content": "As group manager how do I manage my invitations? Once your payment is accepted you will be directed to the management page.",
+        "overview": "Instructions for group managers on managing invitations.",
+        "vector": "",
+        "vector_openai": ""
     }
 ]

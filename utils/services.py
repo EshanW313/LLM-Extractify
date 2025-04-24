@@ -3,6 +3,8 @@ from typing import List
 from fastapi import HTTPException
 from config.config import zillizconfig
 import numpy as np
+import logging
+from openai import OpenAI, OpenAIError
 
 class EmbeddingService:
     """
@@ -12,6 +14,14 @@ class EmbeddingService:
         model_name = "jinaai/jina-embeddings-v3"
         self.model = SentenceTransformer(model_name, trust_remote_code=True)
         self.task = "retrieval.passage"
+        try:
+            logging.info("Initializing OpenAI client")
+            self.client = None
+            self.connect()
+            logging.info("OpenAI client initialized successfully")
+        except Exception as e:
+            logging.error(f"Error initializing OpenAI client: {str(e)}")
+            raise
 
     def _pad_embedding(self, vector: np.ndarray) -> List[float]:
         """
@@ -26,6 +36,15 @@ class EmbeddingService:
             return vector + [0.0] * (target_dim - current_dim)
         return vector
 
+    def connect(self):
+        try:
+            logging.info("Connecting to OpenAI")
+            self.client = OpenAI(api_key=zillizconfig.OPENAI_API_KEY)
+            logging.info("Successfully connected to OpenAI")
+        except Exception as e:
+            logging.error(f"Error connecting to OpenAI: {str(e)}")
+            raise HTTPException(status_code=500, detail="Error connecting to OpenAI")
+        
     async def get_embeddings(self, texts: List[str]) -> List[List[float]]:
         try:
             embeddings = self.model.encode(
@@ -49,3 +68,19 @@ class EmbeddingService:
             return [self._pad_embedding(embedding)]
         except Exception as e:
             raise HTTPException(status_code=400, detail=f"Embedding error: {str(e)}")
+    
+    async def get_openaiembeddings(self, text: List[str]) -> List[float]:
+        """
+        Create embedddingusing openai model
+        """
+        try:
+            logging.debug(f"Getting embedding for list of texts of (length: {len(text)})")
+            response = self.client.embeddings.create(
+                model="text-embedding-3-large",
+                input=text
+            )
+            logging.debug("Successfully generated embedding")
+            return [item.embedding for item in response.data]
+        except OpenAIError as e:
+            logging.error(f"Error getting embedding: {str(e)}")
+            raise HTTPException(status_code=400, detail="Error getting embedding")

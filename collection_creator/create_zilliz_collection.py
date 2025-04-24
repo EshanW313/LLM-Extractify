@@ -62,6 +62,12 @@ class ZillizClient:
                 dim=zillizconfig.VECTOR_DIMENSION
             )
             schema.add_field(
+                field_name="vector_openai",
+                datatype=DataType.FLOAT_VECTOR,
+                description="Content Embedding",
+                dim=zillizconfig.VECTOR_DIMENSION
+            )
+            schema.add_field(
                 field_name="overview",
                 datatype=DataType.VARCHAR,
                 description="Question/Overview",
@@ -82,6 +88,9 @@ class ZillizClient:
             index_params = self.client.prepare_index_params()
             index_params.add_index(
                 field_name="vector", metric_type="COSINE", index_type="AUTOINDEX"
+            )
+            index_params.add_index(
+                field_name="vector_openai", metric_type="COSINE", index_type="AUTOINDEX"
             )
             self.client.create_collection(
                 collection_name=collection_name, schema=schema, index_params=index_params, using="default"
@@ -108,7 +117,8 @@ class ZillizClient:
                     "overview": record.overview,
                     "source": record.meta_data.source,
                     "url": record.meta_data.url or "",
-                    "vector": record.vector
+                    "vector": record.vector,
+                    "vector_openai": record.vector_openai
                 })
             logging.info(f"Inserting {len(records)} records into collection {collection_name}")
             self.client.insert(collection_name=collection_name, data=entities)
