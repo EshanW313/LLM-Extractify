@@ -59,7 +59,7 @@ class OpenAIConfig(ModelProviderConfig):
 	api_key: str = os.getenv("OPENAI_API_KEY", "MISSING")
 
 chunk_and_clean_task_app: OpenAIConfig = OpenAIConfig(
-	messages = "config/prompts/message_chunk.yaml",
+	messages = "config/prompts/message_chunk_openai_v2.yaml",
 )
 
 chunk_and_clean_task_app.update_params(
@@ -101,7 +101,7 @@ class GoogleAIConfig(ModelProviderConfig):
     api_key: str = os.getenv("GEMMA_API_KEY", "MISSING")
 
 gemma_chunk_and_clean_task_app: GoogleAIConfig = GoogleAIConfig(
-    messages="config/prompts/message_chunk_gemma.yaml",
+    messages="config/prompts/message_chunk_gemma_v2.yaml",
 )
 
 gemma_chunk_and_clean_task_app.update_params(
